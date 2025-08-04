@@ -1,0 +1,195 @@
+/* ===================================================================
+   GOLEM ICON SYSTEM
+   Add this to your golem-components.css file
+   ================================================================ */
+
+/* Base Icon Component */
+.golem-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: var(--golem-radius-lg);
+  transition: all var(--golem-duration-base) var(--golem-easing-ease-out);
+  flex-shrink: 0;
+}
+
+/* Icon Variants */
+.golem-icon--primary {
+  background-color: var(--golem-color-primary-100);
+  color: var(--golem-color-primary-600);
+  border: 1px solid var(--golem-color-primary-200);
+}
+
+.golem-icon--secondary {
+  background-color: var(--golem-color-surface-raised);
+  color: var(--golem-color-text-secondary);
+  border: 1px solid var(--golem-color-border-base);
+}
+
+.golem-icon--success {
+  background-color: var(--golem-color-success-light);
+  color: var(--golem-color-success-strong);
+  border: 1px solid var(--golem-color-success-base);
+}
+
+.golem-icon--warning {
+  background-color: var(--golem-color-warning-light);
+  color: var(--golem-color-warning-strong);
+  border: 1px solid var(--golem-color-warning-base);
+}
+
+.golem-icon--error {
+  background-color: var(--golem-color-error-light);
+  color: var(--golem-color-error-strong);
+  border: 1px solid var(--golem-color-error-base);
+}
+
+/* Icon Sizes */
+.golem-icon--sm {
+  width: 2rem;
+  height: 2rem;
+}
+
+.golem-icon--sm svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.golem-icon--lg {
+  width: 3rem;
+  height: 3rem;
+}
+
+.golem-icon--lg svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.golem-icon--xl {
+  width: 4rem;
+  height: 4rem;
+}
+
+.golem-icon--xl svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* Default SVG sizing */
+.golem-icon svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: currentColor;
+}
+
+/* Hover States */
+.golem-icon--primary:hover {
+  background-color: var(--golem-color-primary-200);
+  color: var(--golem-color-primary-700);
+  transform: translateY(-1px);
+  box-shadow: var(--golem-shadow-sm);
+}
+
+.golem-icon--secondary:hover {
+  background-color: var(--golem-color-surface-base);
+  color: var(--golem-color-text-primary);
+  transform: translateY(-1px);
+  box-shadow: var(--golem-shadow-sm);
+}
+
+/* Interactive Icons (clickable) */
+.golem-icon--interactive {
+  cursor: pointer;
+  user-select: none;
+}
+
+.golem-icon--interactive:focus-visible {
+  outline: 2px solid var(--golem-color-primary-500);
+  outline-offset: 2px;
+}
+
+/* Icon with text combinations */
+.golem-icon-text {
+  display: flex;
+  align-items: center;
+  gap: var(--golem-space-3);
+}
+
+.golem-icon-text--vertical {
+  flex-direction: column;
+  text-align: center;
+  gap: var(--golem-space-2);
+}
+
+/* Utility classes for common icon patterns */
+.golem-icon--rounded {
+  border-radius: var(--golem-radius-full);
+}
+
+.golem-icon--square {
+  border-radius: var(--golem-radius-base);
+}
+
+.golem-icon--ghost {
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+
+.golem-icon--ghost:hover {
+  background-color: var(--golem-color-surface-raised);
+}
+
+/* Loading state for icons */
+.golem-icon--loading {
+  position: relative;
+  color: transparent;
+}
+
+.golem-icon--loading::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1rem;
+  height: 1rem;
+  margin: -0.5rem 0 0 -0.5rem;
+  border: 2px solid var(--golem-color-border-base);
+  border-top-color: var(--golem-color-primary-500);
+  border-radius: 50%;
+  animation: golem-icon-spin 0.8s linear infinite;
+}
+
+@keyframes golem-icon-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  .golem-icon {
+    transition: none;
+  }
+  
+  .golem-icon--loading::after {
+    animation: none;
+  }
+  
+  .golem-icon--primary:hover,
+  .golem-icon--secondary:hover {
+    transform: none;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .golem-icon {
+    border-width: 2px;
+  }
+  
+  .golem-icon--ghost {
+    border: 2px solid var(--golem-color-border-strong);
+  }
+}
