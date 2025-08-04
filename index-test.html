@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Golem Design System - An AI Compatible Design System for building consistent, accessible web interfaces">
+    <meta name="keywords" content="design system, AI compatible, components, CSS, accessibility, web development">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Golem Design System">
+    <meta property="og:description" content="An AI Compatible Design System">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://golem-ai.netlify.app">
+    
+    <title>Golem Design System - An AI Compatible Design System</title>
+    
+    <!-- Design System CSS -->
+    <link rel="stylesheet" href="css/golem-tokens.css">
+    <link rel="stylesheet" href="css/golem-foundation.css">
+    <link rel="stylesheet" href="css/golem-components.css">
+    <link rel="stylesheet" href="css/site.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="golem-sr-only golem-sr-only--focusable">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="golem-navbar" role="banner">
+        <div class="golem-container">
+            <div class="golem-flex golem-items-center golem-justify-between">
+                <div class="golem-flex golem-items-center golem-gap-3">
+                    <a href="/" class="golem-navbar__brand">
+                        <strong class="golem-text-headline-medium">Golem</strong>
+                    </a>
+                    <span class="golem-badge golem-badge--primary golem-badge--sm">v0.1</span>
+                </div>
+                
+                <nav class="golem-navbar__nav" role="navigation" aria-label="Main navigation">
+                    <a href="pages/getting-started.html" class="golem-navbar__link">Get Started</a>
+                    <a href="pages/design-tokens/colors.html" class="golem-navbar__link">Design Tokens</a>
+                    <a href="pages/components/buttons.html" class="golem-navbar__link">Components</a>
+                    <a href="pages/ai-integration/overview.html" class="golem-navbar__link">AI Guide</a>
+                    <a href="https://github.com/your-org/golem-design-system" class="golem-btn golem-btn--tertiary golem-btn--sm" target="_blank" rel="noopener">
+                        GitHub
+                    </a>
+                </nav>
+
+                <!-- Mobile menu button -->
+                <button class="golem-btn golem-btn--tertiary golem-btn--icon golem-navbar__mobile-toggle" 
+                        aria-label="Toggle navigation menu" 
+                        aria-expanded="false"
+                        data-mobile-menu-toggle>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile menu -->
+            <div class="golem-navbar__mobile-menu" data-mobile-menu>
+                <nav class="golem-flex golem-flex-col golem-gap-4 golem-p-4">
+                    <a href="pages/getting-started.html" class="golem-navbar__link">Get Started</a>
+                    <a href="pages/design-tokens/colors.html" class="golem-navbar__link">Design Tokens</a>
+                    <a href="pages/components/buttons.html" class="golem-navbar__link">Components</a>
+                    <a href="pages/ai-integration/overview.html" class="golem-navbar__link">AI Guide</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+        <!-- Hero Section -->
+        <section class="golem-hero">
+            <div class="golem-container">
+                <div class="golem-flex golem-flex-col golem-items-center golem-gap-8 golem-text-center">
+                    <header>
+                        <h1 class="golem-text-display-large golem-mb-4">
+                            Golem Design System
+                        </h1>
+                        <p class="golem-text-body-large golem-hero__subtitle">
+                            An AI Compatible Design System v0.1
+                        </p>
+                        <p class="golem-text-body-medium golem-hero__description">
+                            The first design system built specifically for AI-enhanced web development. 
+                            Create consistent, accessible interfaces with semantic components.
+                        </p>
+                    </header>
+                    
+                    <div class="golem-flex golem-gap-4 golem-flex-wrap golem-justify-center">
+                        <a href="pages/getting-started.html" class="golem-btn golem-btn--primary golem-btn--lg">
+                            Get Started
+                        </a>
+                        <a href="pages/components/buttons.html" class="golem-btn golem-btn--secondary golem-btn--lg">
+                            View Components
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="golem-section" aria-labelledby="features-heading">
+            <div class="golem-container">
+                <header class="text-center golem-mb-12">
+                    <h2 id="features-heading" class="golem-text-display-small golem-mb-4">
+                        Why Golem?
+                    </h2>
+                    <p class="golem-text-body-large">
+                        The first design system built specifically for AI-enhanced web development
+                    </p>
+                </header>
+                
+                <div class="golem-grid golem-grid-cols-1 golem-grid-cols-md-2 golem-grid-cols-lg-3 golem-gap-6">
+                    <article class="golem-card">
+                        <div class="golem-card__body">
+                            <div class="golem-flex golem-items-center golem-gap-3 golem-mb-4">
+                                <div class="golem-text-3xl" aria-hidden="true">🤖</div>
+                                <h3 class="golem-card__title golem-mb-0">AI Compatible</h3>
+                            </div>
+                            <p class="golem-card__subtitle golem-mb-0">
+                                Built with semantic naming and structured tokens that AI tools can understand and generate consistently.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="golem-card">
+                        <div class="golem-card__body">
+                            <div class="golem-flex golem-items-center golem-gap-3 golem-mb-4">
+                                <div class="golem-text-3xl" aria-hidden="true">🎯</div>
+                                <h3 class="golem-card__title golem-mb-0">Design Principles</h3>
+                            </div>
+                            <p class="golem-card__subtitle golem-mb-0">
+                                User-centric design with safeguards that prevent AI from creating poor user experiences.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="golem-card">
+                        <div class="golem-card__body">
+                            <div class="golem-flex golem-items-center golem-gap-3 golem-mb-4">
+                                <div class="golem-text-3xl" aria-hidden="true">🏗️</div>
+                                <h3 class="golem-card__title golem-mb-0">Robust & Maintainable</h3>
+                            </div>
+                            <p class="golem-card__subtitle golem-mb-0">
+                                Scalable component architecture that ensures longevity and consistency across AI-enhanced projects.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="golem-card">
+                        <div class="golem-card__body">
+                            <div class="golem-flex golem-items-center golem-gap-3 golem-mb-4">
+                                <div class="golem-text-3xl" aria-hidden="true">🎨</div>
+                                <h3 class="golem-card__title golem-mb-0">Semantic Tokens</h3>
+                            </div>
+                            <p class="golem-card__subtitle golem-mb-0">
+                                Design tokens with meaningful names that AI can interpret for color, spacing, and typography decisions.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="golem-card">
+                        <div class="golem-card__body">
+                            <div class="golem-flex golem-items-center golem-gap-3 golem-mb-4">
+                                <div class="golem-text-3xl" aria-hidden="true">📚</div>
+                                <h3 class="golem-card__title golem-mb-0">Pattern Library</h3>
+                            </div>
+                            <p class="golem-card__subtitle golem-mb-0">
+                                Pre-built patterns and layouts that AI can learn from and combine intelligently.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="golem-card">
+                        <div class="golem-card__body">
+                            <div class="golem-flex golem-items-center golem-gap-3 golem-mb-4">
+                                <div class="golem-text-3xl" aria-hidden="true">♿</div>
+                                <h3 class="golem-card__title golem-mb-0">Accessibility First</h3>
+                            </div>
+                            <p class="golem-card__subtitle golem-mb-0">
+                                WCAG compliant components ensure AI-generated interfaces remain accessible to all users.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Design Principles Section -->
+        <section class="golem-section golem-section--secondary" aria-labelledby="principles-heading">
+            <div class="golem-container">
+                <header class="text-center golem-mb-12">
+                    <h2 id="principles-heading" class="golem-text-display-small golem-mb-4">
+                        Design Principles
+                    </h2>
+                    <p class="golem-text-body-large">
+                        Core values that guide every decision in Golem
+                    </p>
+                </header>
+                
+                <div class="golem-grid golem-grid-cols-1 golem-grid-cols-lg-3 golem-gap-8">
+                    <article class="text-center">
+                        <div class="golem-badge golem-badge--primary golem-badge--lg golem-mb-4">
+                            Principle 1
+                        </div>
+                        <h3 class="golem-text-headline-medium golem-mb-4">
+                            User-Centricity
+                        </h3>
+                        <p class="golem-text-body-medium">
+                            Every element in our design system is crafted with the user's needs and comfort in mind. 
+                            From intuitive navigation to accessible color schemes, Golem puts the user first.
+                        </p>
+                    </article>
+
+                    <article class="text-center">
+                        <div class="golem-badge golem-badge--primary golem-badge--lg golem-mb-4">
+                            Principle 2
+                        </div>
+                        <h3 class="golem-text-headline-medium golem-mb-4">
+                            Balanced Creativity
+                        </h3>
+                        <p class="golem-text-body-medium">
+                            While we empower designers with flexible and powerful tools, we've built in safeguards 
+                            to prevent designs that could negatively impact user experience. Golem strikes a balance 
+                            between creativity and usability.
+                        </p>
+                    </article>
+
+                    <article class="text-center">
+                        <div class="golem-badge golem-badge--primary golem-badge--lg golem-mb-4">
+                            Principle 3
+                        </div>
+                        <h3 class="golem-text-headline-medium golem-mb-4">
+                            Robust Maintainability
+                        </h3>
+                        <p class="golem-text-body-medium">
+                            Our components are built to be robust and maintainable, ensuring longevity and consistency 
+                            across projects. However, this never comes at the cost of user experience or design intent.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Component Preview Section -->
+        <section class="golem-section" aria-labelledby="preview-heading">
+            <div class="golem-container">
+                <header class="text-center golem-mb-12">
+                    <h2 id="preview-heading" class="golem-text-display-small golem-mb-4">
+                        Component Preview
+                    </h2>
+                    <p class="golem-text-body-large">
+                        AI-compatible components with semantic naming
+                    </p>
+                </header>
+                
+                <div class="golem-grid golem-grid-cols-1 golem-grid-cols-lg-2 golem-gap-8">
+                    <!-- Buttons Preview -->
+                    <div class="golem-card">
+                        <div class="golem-card__header">
+                            <h3 class="golem-card__title">Buttons</h3>
+                            <p class="golem-card__subtitle">Semantic button variants for AI</p>
+                        </div>
+                        <div class="golem-card__body">
+                            <div class="golem-flex golem-gap-3 golem-flex-wrap">
+                                <button class="golem-btn golem-btn--primary">Primary</button>
+                                <button class="golem-btn golem-btn--secondary">Secondary</button>
+                                <button class="golem-btn golem-btn--tertiary">Tertiary</button>
+                            </div>
+                        </div>
+                        <div class="golem-card__footer">
+                            <a href="pages/components/buttons.html" class="golem-btn golem-btn--tertiary golem-btn--sm">
+                                View Documentation
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Alerts Preview -->
+                    <div class="golem-card">
+                        <div class="golem-card__header">
+                            <h3 class="golem-card__title">Alerts</h3>
+                            <p class="golem-card__subtitle">Semantic feedback components</p>
+                        </div>
+                        <div class="golem-card__body">
+                            <div class="golem-alert golem-alert--success golem-mb-3">
+                                <div class="golem-alert__content">
+                                    <div class="golem-alert__title">Success</div>
+                                    <div class="golem-alert__description">AI understands this is positive feedback</div>
+                                </div>
+                            </div>
+                            <div class="golem-alert golem-alert--warning">
+                                <div class="golem-alert__content">
+                                    <div class="golem-alert__title">Warning</div>
+                                    <div class="golem-alert__description">AI understands this needs attention</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="golem-card__footer">
+                            <a href="pages/components/alerts.html" class="golem-btn golem-btn--tertiary golem-btn--sm">
+                                View Documentation
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="golem-section">
+            <div class="golem-container">
+                <div class="golem-card golem-card--raised">
+                    <div class="golem-card__body text-center">
+                        <h2 class="golem-text-display-small golem-mb-4">
+                            Ready to Build AI-Enhanced Interfaces?
+                        </h2>
+                        <p class="golem-text-body-large golem-mb-6">
+                            Start using Golem today and create consistent, accessible, AI-compatible web experiences.
+                        </p>
+                        <div class="golem-flex golem-justify-center golem-gap-4 golem-flex-wrap">
+                            <a href="pages/getting-started.html" class="golem-btn golem-btn--primary golem-btn--lg">
+                                Get Started
+                            </a>
+                            <a href="https://github.com/your-org/golem-design-system" 
+                               class="golem-btn golem-btn--tertiary golem-btn--lg"
+                               target="_blank" rel="noopener">
+                                View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="golem-footer" role="contentinfo">
+        <div class="golem-container">
+            <div class="golem-grid golem-grid-cols-1 golem-grid-cols-md-2 golem-grid-cols-lg-4 golem-gap-8 golem-mb-8">
+                <!-- Design System Links -->
+                <div>
+                    <h3 class="golem-text-headline-small golem-mb-4">Design System</h3>
+                    <nav class="golem-flex golem-flex-col golem-gap-2">
+                        <a href="pages/getting-started.html" class="golem-footer__link">Getting Started</a>
+                        <a href="pages/design-tokens/colors.html" class="golem-footer__link">Design Tokens</a>
+                        <a href="pages/components/buttons.html" class="golem-footer__link">Components</a>
+                        <a href="pages/patterns/hero-sections.html" class="golem-footer__link">Patterns</a>
+                    </nav>
+                </div>
+
+                <!-- AI Integration Links -->
+                <div>
+                    <h3 class="golem-text-headline-small golem-mb-4">AI Integration</h3>
+                    <nav class="golem-flex golem-flex-col golem-gap-2">
+                        <a href="pages/ai-integration/overview.html" class="golem-footer__link">AI Compatibility</a>
+                        <a href="pages/ai-integration/prompt-library.html" class="golem-footer__link">Prompt Library</a>
+                        <a href="pages/ai-integration/best-practices.html" class="golem-footer__link">Best Practices</a>
+                    </nav>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h3 class="golem-text-headline-small golem-mb-4">Resources</h3>
+                    <nav class="golem-flex golem-flex-col golem-gap-2">
+                        <a href="https://github.com/your-org/golem-design-system" 
+                           class="golem-footer__link" target="_blank" rel="noopener">
+                            GitHub Repository
+                        </a>
+                        <a href="https://github.com/your-org/golem-design-system/issues" 
+                           class="golem-footer__link" target="_blank" rel="noopener">
+                            Report Issues
+                        </a>
+                        <a href="https://github.com/your-org/golem-design-system/discussions" 
+                           class="golem-footer__link" target="_blank" rel="noopener">
+                            Discussions
+                        </a>
+                    </nav>
+                </div>
+
+                <!-- Community -->
+                <div>
+                    <h3 class="golem-text-headline-small golem-mb-4">Community</h3>
+                    <nav class="golem-flex golem-flex-col golem-gap-2">
+                        <a href="mailto:hello@golem-design-system.com" class="golem-footer__link">Contact</a>
+                        <a href="pages/changelog.html" class="golem-footer__link">Changelog</a>
+                        <a href="pages/contributing.html" class="golem-footer__link">Contributing</a>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="golem-flex golem-items-center golem-justify-between golem-pt-8 golem-border-t">
+                <div class="golem-flex golem-items-center golem-gap-4">
+                    <strong class="golem-text-headline-small">Golem</strong>
+                    <span class="golem-badge golem-badge--primary golem-badge--sm">v0.1</span>
+                </div>
+                
+                <p class="golem-text-body-small golem-color-text-tertiary">
+                    © 2025 Golem Design System. Built for the future of AI-enhanced web development.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/golem-components.js"></script>
+    <script src="js/site.js"></script>
+</body>
+</html>

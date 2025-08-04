@@ -1,0 +1,146 @@
+/**
+ * GOLEM DESIGN SYSTEM - DESIGN TOKENS
+ * Copy this entire content into your css/golem-tokens.css file
+ */
+
+:root {
+  /* Primary Color Scale - Based on #403D39 */
+  --golem-color-primary-50: #f7f6f5;   /* Very light warm gray */
+  --golem-color-primary-100: #edeae8;  /* Light warm gray */
+  --golem-color-primary-200: #d6d0cc;  /* Lighter warm gray */
+  --golem-color-primary-300: #b8aea6;  /* Medium light warm gray */
+  --golem-color-primary-400: #928579;  /* Medium warm gray */
+  --golem-color-primary-500: #403D39;  /* Your primary color */
+  --golem-color-primary-600: #373530;  /* Darker than primary */
+  --golem-color-primary-700: #2e2c27;  /* Much darker */
+  --golem-color-primary-800: #25231f;  /* Very dark */
+  --golem-color-primary-900: #1c1a17;  /* Nearly black */
+  --golem-color-primary-950: #0f0e0c;  /* Almost black */
+
+  /* Warm Secondary Colors - Harmonious with brown */
+  --golem-color-secondary-50: #fefaf8;  /* Warm white */
+  --golem-color-secondary-100: #fdf4ed; /* Very light warm */
+  --golem-color-secondary-200: #fce4d1; /* Light warm peach */
+  --golem-color-secondary-300: #f9c5a1; /* Warm peach */
+  --golem-color-secondary-400: #f49e6b; /* Medium orange */
+  --golem-color-secondary-500: #ea7a47; /* Warm orange */
+  --golem-color-secondary-600: #d16229; /* Burnt orange */
+  --golem-color-secondary-700: #b04d1f; /* Deep orange */
+
+  /* Neutral Colors - Warmer grays to complement brown */
+  --golem-color-gray-50: #fafaf9;    /* Warm white */
+  --golem-color-gray-100: #f5f5f4;   /* Very light warm gray */
+  --golem-color-gray-200: #e7e5e4;   /* Light warm gray */
+  --golem-color-gray-300: #d6d3d1;   /* Medium light warm gray */
+  --golem-color-gray-400: #a8a29e;   /* Medium warm gray */
+  --golem-color-gray-500: #78716c;   /* Medium-dark warm gray */
+  --golem-color-gray-600: #57534e;   /* Dark warm gray */
+  --golem-color-gray-700: #44403c;   /* Very dark warm gray */
+  --golem-color-gray-800: #292524;   /* Nearly black warm */
+  --golem-color-gray-900: #1c1917;   /* Almost black warm */
+  --golem-color-gray-950: #0c0a09;   /* Black warm */
+  
+  --golem-color-white: #ffffff;
+  --golem-color-black: #000000;
+  
+  /* Semantic Colors - Updated for brown theme */
+  --golem-color-success-light: #f0fdf4;
+  --golem-color-success-base: #16a34a;
+  --golem-color-success-strong: #15803d;
+  
+  --golem-color-warning-light: #fffbeb;
+  --golem-color-warning-base: #f59e0b;
+  --golem-color-warning-strong: #d97706;
+  
+  --golem-color-error-light: #fef2f2;
+  --golem-color-error-base: #dc2626;
+  --golem-color-error-strong: #b91c1c;
+  
+  --golem-color-info-light: #eff6ff;
+  --golem-color-info-base: #2563eb;
+  --golem-color-info-strong: #1d4ed8;
+
+  /* Surface Colors - Using warm neutrals */
+  --golem-color-surface-base: #fafaf9;      /* Warm white background */
+  --golem-color-surface-raised: #f5f5f4;    /* Slightly elevated */
+  --golem-color-surface-overlay: #ffffff;    /* Pure white for overlays */
+  
+  /* Border Colors */
+  --golem-color-border-base: #e7e5e4;       /* Warm light border */
+  --golem-color-border-strong: #d6d3d1;     /* Stronger warm border */
+  
+  /* Text Colors - High contrast with warm undertones */
+  --golem-color-text-primary: #1c1917;      /* Near black warm */
+  --golem-color-text-secondary: #57534e;    /* Dark warm gray */
+  --golem-color-text-tertiary: #78716c;     /* Medium warm gray */
+  --golem-color-text-inverse: #fafaf9;      /* Warm white on dark */
+  --golem-color-text-link: #403D39;         /* Primary color for links */
+  --golem-color-text-link-hover: #2e2c27;   /* Darker on hover */
+
+  /* Typography */
+  --golem-font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  --golem-font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+  
+  --golem-text-xs: 0.75rem;
+  --golem-text-sm: 0.875rem;
+  --golem-text-base: 1rem;
+  --golem-text-lg: 1.125rem;
+  --golem-text-xl: 1.25rem;
+  --golem-text-2xl: 1.5rem;
+  --golem-text-3xl: 1.875rem;
+  --golem-text-4xl: 2.25rem;
+  --golem-text-5xl: 3rem;
+  
+  --golem-text-body-small: var(--golem-text-sm);
+  --golem-text-body-medium: var(--golem-text-base);
+  --golem-text-body-large: var(--golem-text-lg);
+  --golem-text-display-large: var(--golem-text-5xl);
+  --golem-text-display-medium: var(--golem-text-4xl);
+  --golem-text-headline-medium: var(--golem-text-2xl);
+  --golem-text-headline-small: var(--golem-text-xl);
+  
+  --golem-font-light: 300;
+  --golem-font-normal: 400;
+  --golem-font-medium: 500;
+  --golem-font-semibold: 600;
+  --golem-font-bold: 700;
+  
+  --golem-leading-tight: 1.25;
+  --golem-leading-normal: 1.5;
+  --golem-leading-relaxed: 1.625;
+  
+  /* Spacing */
+  --golem-space-1: 0.25rem;
+  --golem-space-2: 0.5rem;
+  --golem-space-3: 0.75rem;
+  --golem-space-4: 1rem;
+  --golem-space-5: 1.25rem;
+  --golem-space-6: 1.5rem;
+  --golem-space-8: 2rem;
+  --golem-space-10: 2.5rem;
+  --golem-space-12: 3rem;
+  --golem-space-16: 4rem;
+  --golem-space-20: 5rem;
+  
+  /* Border Radius */
+  --golem-radius-none: 0;
+  --golem-radius-sm: 0.125rem;
+  --golem-radius-base: 0.25rem;
+  --golem-radius-md: 0.375rem;
+  --golem-radius-lg: 0.5rem;
+  --golem-radius-xl: 0.75rem;
+  --golem-radius-2xl: 1rem;
+  --golem-radius-full: 9999px;
+  
+  /* Shadows */
+  --golem-shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --golem-shadow-base: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --golem-shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --golem-shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  
+  /* Animation */
+  --golem-duration-fast: 150ms;
+  --golem-duration-base: 200ms;
+  --golem-duration-slow: 300ms;
+  --golem-easing-ease-out: cubic-bezier(0, 0, 0.2, 1);
+}

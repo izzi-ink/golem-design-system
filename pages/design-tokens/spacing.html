@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spacing - Golem Design System</title>
+    
+    <!-- Design System CSS -->
+    <link rel="stylesheet" href="../../css/golem-tokens.css">
+    <link rel="stylesheet" href="../../css/golem-foundation.css">
+    <link rel="stylesheet" href="../../css/golem-components.css">
+    <link rel="stylesheet" href="../../css/site.css">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="golem-container golem-py-8">
+        <div class="golem-flex golem-items-center golem-justify-between">
+            <a href="../../index.html" class="golem-text-headline-medium" style="text-decoration: none; color: var(--golem-color-text-primary);">
+                <strong>Golem</strong> <span class="golem-badge golem-badge--primary golem-badge--sm">v0.1</span>
+            </a>
+            <div class="golem-flex golem-gap-6">
+                <a href="../getting-started.html" style="color: var(--golem-color-text-secondary); text-decoration: none;">Getting Started</a>
+                <a href="spacing.html" style="color: var(--golem-color-primary-600); text-decoration: none;">Design Tokens</a>
+                <a href="../components/buttons.html" style="color: var(--golem-color-text-secondary); text-decoration: none;">Components</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="golem-container">
+        <div class="golem-grid golem-grid-cols-1 golem-grid-cols-lg-4 golem-gap-8">
+            
+            <!-- Sidebar -->
+            <aside>
+                <div class="golem-card">
+                    <div class="golem-card__body">
+                        <h3 class="golem-text-headline-small golem-mb-4">Design Tokens</h3>
+                        <nav class="golem-flex golem-flex-col golem-gap-2">
+                            <a href="colors.html" style="color: var(--golem-color-text-secondary); text-decoration: none; padding: var(--golem-space-2); border-radius: var(--golem-radius-base);">Colors</a>
+                            <a href="typography.html" style="color: var(--golem-color-text-secondary); text-decoration: none; padding: var(--golem-space-2); border-radius: var(--golem-radius-base);">Typography</a>
+                            <a href="spacing.html" style="color: var(--golem-color-primary-600); text-decoration: none; padding: var(--golem-space-2); border-radius: var(--golem-radius-base); background-color: var(--golem-color-primary-50);">Spacing</a>
+                        </nav>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <div class="golem-col-span-3">
+                <header class="golem-mb-8">
+                    <h1 class="golem-text-display-large">Spacing</h1>
+                    <p class="golem-text-body-large" style="color: var(--golem-color-text-secondary);">
+                        Consistent spacing system based on an 8px grid for predictable, AI-compatible layouts.
+                    </p>
+                </header>
+
+                <!-- Spacing Scale Section -->
+                <section class="golem-mb-12">
+                    <h2 class="golem-text-display-medium golem-mb-6">Spacing Scale</h2>
+                    
+                    <div class="golem-card golem-mb-6">
+                        <div class="golem-card__header">
+                            <h3 class="golem-card__title">8px Base Grid System</h3>
+                            <p class="golem-card__subtitle">All spacing values are multiples of 8px for mathematical consistency</p>
+                        </div>
+                        <div class="golem-card__body">
+                            <div class="golem-grid golem-grid-cols-1 golem-grid-cols-lg-2 golem-gap-8">
+                                <!-- Small Spaces -->
+                                <div>
+                                    <h4 class="golem-text-headline-small golem-mb-4">Small Spaces</h4>
+                                    <div class="golem-flex golem-flex-col golem-gap-4">
+                                        <!-- Space 1 -->
+                                        <div class="golem-flex golem-items-center golem-gap-4">
+                                            <div style="width: 100px; font-family: var(--golem-font-mono); font-size: var(--golem-text-sm);">
+                                                golem-space-1
+                                            </div>
+                                            <div style="background-color: var(--golem-color-primary-500); height: 16px; width: var(--golem-space-1);"></div>
+                                            <span style="color: var(--golem-color-text-secondary); font-size: var(--golem-text-sm);">4px</span>
+                                        </div>
+
+                                        <!-- Space 2 -->
+                                        <div class="golem-flex golem-items-center golem-gap-4">
+                                            <div style="width: 100px; font-family: var(--golem-font-mono); font-size: var(--golem-text-sm);">
+                                                golem-space-2
+                                            </div>
+                                            <div style="background-color: var(--golem-color-primary-500); height: 16px; width: var(--golem-space-2);"></div>
+                                            <span style="color: var(--golem-color-text-secondary); font-size: var(--golem-text-sm);">8px</span>
+                                        </div>
+
+                                        <!-- Space 3 -->
+                                        <div class="golem-flex golem-items-center golem-gap-4">
+                                            <div style="width: 100px; font-family: var(--golem-font-mono); font-size: var(--golem-text-sm);">
+                                                golem-space-3
+                                            </div>
+                                            <div style="background-color: var(--golem-color-primary-500); height: 16px; width: var(--golem-space-3);"></div>
+                                            <span style="color: var(--golem-color-text-secondary); font-size: var(--golem-text-sm);">12px</span>
+                                        </div>
+
+                                        <!-- Space 4 -->
+                                        <div class="golem-flex golem-items-center golem-gap-4">
+                                            <div style="width: 100px; font-family: var(--golem-font-mono); font-size: var(--golem-text-sm);">
+                                                golem-space-4
+                                            </div>
+                                            <div style="background-color: var(--golem-color-primary-500); height: 16px; width: var(--golem-space-4);"></div>
+                                            <span style="color: var(--golem-color-text-secondary); font-size: var(--golem-text-sm);">16px</span>
+                                        </div>
+
+                                        <!-- Space 6 -->
+                                        <div class="golem-flex golem-items-center golem-gap-4">
+                                            <div style="width: 100px; font-family: var(--golem-font-mono); font-size: var(--golem-text-sm);">
+                                                golem-space-6
+                                            </div>
+                                            <div style="background-color: var(--golem-color-primary-500); height: 16px; width: var(--golem-space-6);"></div>
+                                            <span style="color: var(--golem-color-text-secondary); font-size: var(--golem-text-sm);">24px</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Large Spaces -->
+                                <div>
+                                    <h4 class="golem-text-headline-small golem-mb-4">Large Spaces</h4>
+                                    <div class="golem-flex golem-flex-col golem-gap-4">
+                                        <!-- Space 8 -->
+                                        <div class="golem-flex golem-items-center golem-gap-4">
+                                            <div style="width: 100px; font-family: var(--golem-font-mono); font-size: var(--golem-text-sm);">
+                                                golem-space-8
+                                            </div>
+                                            <div style="background-color: var(--golem-color-primary-600); height: 16px; width: var(--golem-space-8);"></div>
+                                            <span style="color: var(--golem-color-text-secondary); font-size: var(--golem-text-sm);">32px</span>
+                                        </div>
+
+                                        <!-- Space 12 -->
+                                        <div class="golem-flex golem-items-center golem-gap-4">
+                                            <div style="width: 100px; font-family: var(--golem-font-mono); font-size: var(--golem-text-sm);">
+                                                golem-space-12
+                                            </div>
+                                            <div style="background-color: var(--golem-color-primary-600); height: 16px; width: var(--golem-space-12);"></div>
+                                            <span style="color: var(--golem-color-text-secondary); font-size: var(--golem-text-sm);">48px</span>
+                                        </div>
+
+                                        <!-- Space 16 -->
+                                        <div class="golem-flex golem-items-center golem-gap-4">
+                                            <div style="width: 100px; font-family: var(--golem-font-mono); font-size: var(--golem-text-sm);">
+                                                golem-space-16
+                                            </div>
+                                            <div style="background-color: var(--golem-color-primary-600); height: 16px; width: var(--golem-space-16); max-width: 100px;"></div>
+                                            <span style="color: var(--golem-color-text-secondary); font-size: var(--golem-text-sm);">64px</span>
+                                        </div>
+
+                                        <!-- Space 20 -->
+                                        <div class="golem-flex golem-items-center golem-gap-4">
+                                            <div style="width: 100px; font-family: var(--golem-font-mono); font-size: var(--golem-text-sm);">
+                                                golem-space-20
+                                            </div>
+                                            <div style="background-color: var(--golem-color-primary-600); height: 16px; width: var(--golem-space-20); max-width: 100px;"></div>
+                                            <span style="color: var(--golem-color-text-secondary); font-size: var(--golem-text-sm);">80px</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Usage Examples Section -->
+                <section class="golem-mb-12">
+                    <h2 class="golem-text-display-medium golem-mb-6">Usage Examples</h2>
+                    
+                    <!-- Margins Example -->
+                    <div class="golem-card golem-mb-6">
+                        <div class="golem-card__header">
+                            <h3 class="golem-card__title">Margin Classes</h3>
+                            <p class="golem-card__subtitle">Add space around elements</p>
+                        </div>
+                        <div class="golem-card__body">
+                            <!-- Live Example -->
+                            <div class="golem-mb-6" style="padding: var(--golem-space-6); background-color: var(--golem-color-surface-raised); border: 1px solid var(--golem-color-border-base); border-radius: var(--golem-radius-base);">
+                                <div style="background-color: var(--golem-color-primary-100); padding: var(--golem-space-2); border-radius: var(--golem-radius-base); margin-bottom: var(--golem-space-2);">
+                                    <span style="color: var(--golem-color-primary-700);">Default margin</span>
+                                </div>
+                                <div class="golem-mb-4" style="background-color: var(--golem-color-primary-100); padding: var(--golem-space-2); border-radius: var(--golem-radius-base);">
+                                    <span style="color: var(--golem-color-primary-700);">golem-mb-4 (margin-bottom: 16px)</span>
+                                </div>
+                                <div class="golem-mb-8" style="background-color: var(--golem-color-primary-100); padding: var(--golem-space-2); border-radius: var(--golem-radius-base);">
+                                    <span style="color: var(--golem-color-primary-700);">golem-mb-8 (margin-bottom: 32px)</span>
+                                </div>
+                                <div style="background-color: var(--golem-color-primary-100); padding: var(--golem-space-2); border-radius: var(--golem-radius-base);">
+                                    <span style="color: var(--golem-color-primary-700);">Final element</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Code -->
+                            <div style="background-color: var(--golem-color-surface-raised); padding: var(--golem-space-4); border-radius: var(--golem-radius-base); font-family: var(--golem-font-mono); font-size: var(--golem-text-sm);">
+                                <code>&lt;div class="golem-mb-4"&gt;16px bottom margin&lt;/div&gt;
+&lt;div class="golem-mb-8"&gt;32px bottom margin&lt;/div&gt;
+&lt;div class="golem-mt-6"&gt;24px top margin&lt;/div&gt;</code>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Padding Example -->
+                    <div class="golem-card golem-mb-6">
+                        <div class="golem-card__header">
+                            <h3 class="golem-card__title">Padding Classes</h3>
+                            <p class="golem-card__subtitle">Add space inside elements</p>
+                        </div>
+                        <div class="golem-card__body">
+                            <!-- Live Example -->
+                            <div class="golem-mb-6" style="background-color: var(--golem-color-surface-raised); border-radius: var(--golem-radius-base);">
+                                <div class="golem-flex golem-gap-4">
+                                    <div class="golem-p-2" style="background-color: var(--golem-color-primary-100); border-radius: var(--golem-radius-base); border: 2px dashed var(--golem-color-primary-300);">
+                                        <div style="background-color: var(--golem-color-primary-500); color: white; padding: var(--golem-space-1); border-radius: var(--golem-radius-sm); font-size: var(--golem-text-sm);">
+                                            golem-p-2
+                                        </div>
+                                    </div>
+                                    <div class="golem-p-4" style="background-color: var(--golem-color-primary-100); border-radius: var(--golem-radius-base); border: 2px dashed var(--golem-color-primary-300);">
+                                        <div style="background-color: var(--golem-color-primary-500); color: white; padding: var(--golem-space-1); border-radius: var(--golem-radius-sm); font-size: var(--golem-text-sm);">
+                                            golem-p-4
+                                        </div>
+                                    </div>
+                                    <div class="golem-p-6" style="background-color: var(--golem-color-primary-100); border-radius: var(--golem-radius-base); border: 2px dashed var(--golem-color-primary-300);">
+                                        <div style="background-color: var(--golem-color-primary-500); color: white; padding: var(--golem-space-1); border-radius: var(--golem-radius-sm); font-size: var(--golem-text-sm);">
+                                            golem-p-6
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Code -->
+                            <div style="background-color: var(--golem-color-surface-raised); padding: var(--golem-space-4); border-radius: var(--golem-radius-base); font-family: var(--golem-font-mono); font-size: var(--golem-text-sm);">
+                                <code>&lt;div class="golem-p-2"&gt;8px padding&lt;/div&gt;
+&lt;div class="golem-p-4"&gt;16px padding&lt;/div&gt;
+&lt;div class="golem-p-6"&gt;24px padding&lt;/div&gt;</code>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gap Example -->
+                    <div class="golem-card">
+                        <div class="golem-card__header">
+                            <h3 class="golem-card__title">Gap Classes</h3>
+                            <p class="golem-card__subtitle">Space between flex and grid items</p>
+                        </div>
+                        <div class="golem-card__body">
+                            <!-- Live Example -->
+                            <div class="golem-mb-6">
+                                <h4 class="golem-mb-3">Flex Gap Examples</h4>
+                                
+                                <div class="golem-mb-4" style="background-color: var(--golem-color-surface-raised); padding: var(--golem-space-4); border-radius: var(--golem-radius-base);">
+                                    <p class="golem-mb-2" style="font-size: var(--golem-text-sm); color: var(--golem-color-text-secondary);">golem-gap-2 (8px gap)</p>
+                                    <div class="golem-flex golem-gap-2">
+                                        <div style="background-color: var(--golem-color-primary-500); color: white; padding: var(--golem-space-2); border-radius: var(--golem-radius-base); font-size: var(--golem-text-sm);">Item 1</div>
+                                        <div style="background-color: var(--golem-color-primary-500); color: white; padding: var(--golem-space-2); border-radius: var(--golem-radius-base); font-size: var(--golem-text-sm);">Item 2</div>
+                                        <div style="background-color: var(--golem-color-primary-500); color: white; padding: var(--golem-space-2); border-radius: var(--golem-radius-base); font-size: var(--golem-text-sm);">Item 3</div>
+                                    </div>
+                                </div>
+
+                                <div class="golem-mb-4" style="background-color: var(--golem-color-surface-raised); padding: var(--golem-space-4); border-radius: var(--golem-radius-base);">
+                                    <p class="golem-mb-2" style="font-size: var(--golem-text-sm); color: var(--golem-color-text-secondary);">golem-gap-4 (16px gap)</p>
+                                    <div class="golem-flex golem-gap-4">
+                                        <div style="background-color: var(--golem-color-primary-500); color: white; padding: var(--golem-space-2); border-radius: var(--golem-radius-base); font-size: var(--golem-text-sm);">Item 1</div>
+                                        <div style="background-color: var(--golem-color-primary-500); color: white; padding: var(--golem-space-2); border-radius: var(--golem-radius-base); font-size: var(--golem-text-sm);">Item 2</div>
+                                        <div style="background-color: var(--golem-color-primary-500); color: white; padding: var(--golem-space-2); border-radius: var(--golem-radius-base); font-size: var(--golem-text-sm);">Item 3</div>
+                                    </div>
+                                </div>
+
+                                <div style="background-color: var(--golem-color-surface-raised); padding: var(--golem-space-4); border-radius: var(--golem-radius-base);">
+                                    <p class="golem-mb-2" style="font-size: var(--golem-text-sm); color: var(--golem-color-text-secondary);">golem-gap-6 (24px gap)</p>
+                                    <div class="golem-flex golem-gap-6">
+                                        <div style="background-color: var(--golem-color-primary-500); color: white; padding: var(--golem-space-2); border-radius: var(--golem-radius-base); font-size: var(--golem-text-sm);">Item 1</div>
+                                        <div style="background-color: var(--golem-color-primary-500); color: white; padding: var(--golem-space-2); border-radius: var(--golem-radius-base); font-size: var(--golem-text-sm);">Item 2</div>
+                                        <div style="background-color: var(--golem-color-primary-500); color: white; padding: var(--golem-space-2); border-radius: var(--golem-radius-base); font-size: var(--golem-text-sm);">Item 3</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Code -->
+                            <div style="background-color: var(--golem-color-surface-raised); padding: var(--golem-space-4); border-radius: var(--golem-radius-base); font-family: var(--golem-font-mono); font-size: var(--golem-text-sm);">
+                                <code>&lt;div class="golem-flex golem-gap-2"&gt;8px gaps&lt;/div&gt;
+&lt;div class="golem-flex golem-gap-4"&gt;16px gaps&lt;/div&gt;
+&lt;div class="golem-grid golem-grid-cols-3 golem-gap-6"&gt;24px gaps&lt;/div&gt;</code>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- AI Integration Section -->
+                <section class="golem-mb-12">
+                    <h2 class="golem-text-display-medium golem-mb-6">AI Integration</h2>
+                    
+                    <div class="golem-card" style="background: linear-gradient(135deg, var(--golem-color-primary-50) 0%, var(--golem-color-primary-100) 100%); border-color: var(--golem-color-primary-200);">
+                        <div class="golem-card__body">
+                            <div style="display: flex; align-items: center; gap: var(--golem-space-3); margin-bottom: var(--golem-space-4);">
+                                <span style="font-size: 2rem;">🤖</span>
+                                <h3 class="golem-card__title golem-mb-0" style="color: var(--golem-color-primary-700);">Predictable Spacing for AI</h3>
+                            </div>
+                            
+                            <p style="color: var(--golem-color-primary-700); margin-bottom: var(--golem-space-4);">
+                                Golem's 8px-based spacing system helps AI create mathematically consistent layouts:
+                            </p>
+                            
+                            <div class="golem-grid golem-grid-cols-1 golem-grid-cols-lg-2 golem-gap-6">
+                                <div>
+                                    <h4 style="color: var(--golem-color-primary-700); margin-bottom: var(--golem-space-3);">✅ AI Benefits</h4>
+                                    <ul style="list-style: none; padding: 0; color: var(--golem-color-primary-700);">
+                                        <li class="golem-mb-2">• Predictable mathematical relationships</li>
+                                        <li class="golem-mb-2">• Consistent visual rhythm</li>
+                                        <li class="golem-mb-2">• Easy to scale and maintain</li>
+                                        <li class="golem-mb-2">• Works across different screen sizes</li>
+                                    </ul>
+                                </div>
+                                
+                                <div>
+                                    <h4 style="color: var(--golem-color-primary-700); margin-bottom: var(--golem-space-3);">🎯 Usage Patterns</h4>
+                                    <ul style="list-style: none; padding: 0; color: var(--golem-color-primary-700);">
+                                        <li class="golem-mb-2">• Small gaps: space-2, space-3</li>
+                                        <li class="golem-mb-2">• Medium gaps: space-4, space-6</li>
+                                        <li class="golem-mb-2">• Large gaps: space-8, space-12</li>
+                                        <li class="golem-mb-2">• Section spacing: space-16, space-20</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Complete Spacing Reference -->
+                <section class="golem-mb-12">
+                    <h2 class="golem-text-display-medium golem-mb-6">Complete Reference</h2>
+                    
+                    <div class="golem-card">
+                        <div class="golem-card__header">
+                            <h3 class="golem-card__title">All Spacing Classes</h3>
+                            <p class="golem-card__subtitle">Complete list of available spacing utilities</p>
+                        </div>
+                        <div class="golem-card__body">
+                            <div class="golem-grid golem-grid-cols-1 golem-grid-cols-lg-3 golem-gap-6">
+                                <!-- Margin Classes -->
+                                <div>
+                                    <h4 class="golem-text-headline-small golem-mb-3">Margin Classes</h4>
+                                    <div style="font-family: var(--golem-font-mono); font-size: var(--golem-text-sm); line-height: 1.6;">
+                                        <div>.golem-m-0 → margin: 0</div>
+                                        <div>.golem-mb-2 → margin-bottom: 8px</div>
+                                        <div>.golem-mb-4 → margin-bottom: 16px</div>
+                                        <div>.golem-mb-6 → margin-bottom: 24px</div>
+                                        <div>.golem-mb-8 → margin-bottom: 32px</div>
+                                        <div>.golem-mt-4 → margin-top: 16px</div>
+                                        <div>.golem-mt-6 → margin-top: 24px</div>
+                                        <div>.golem-mt-8 → margin-top: 32px</div>
+                                    </div>
+                                </div>
+
+                                <!-- Padding Classes -->
+                                <div>
+                                    <h4 class="golem-text-headline-small golem-mb-3">Padding Classes</h4>
+                                    <div style="font-family: var(--golem-font-mono); font-size: var(--golem-text-sm); line-height: 1.6;">
+                                        <div>.golem-p-2 → padding: 8px</div>
+                                        <div>.golem-p-4 → padding: 16px</div>
+                                        <div>.golem-p-6 → padding: 24px</div>
+                                        <div>.golem-p-8 → padding: 32px</div>
+                                        <div>.golem-py-8 → padding-y: 32px</div>
+                                    </div>
+                                </div>
+
+                                <!-- Gap Classes -->
+                                <div>
+                                    <h4 class="golem-text-headline-small golem-mb-3">Gap Classes</h4>
+                                    <div style="font-family: var(--golem-font-mono); font-size: var(--golem-text-sm); line-height: 1.6;">
+                                        <div>.golem-gap-2 → gap: 8px</div>
+                                        <div>.golem-gap-3 → gap: 12px</div>
+                                        <div>.golem-gap-4 → gap: 16px</div>
+                                        <div>.golem-gap-6 → gap: 24px</div>
+                                        <div>.golem-gap-8 → gap: 32px</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Next Steps -->
+                <section class="golem-mb-12">
+                    <div class="golem

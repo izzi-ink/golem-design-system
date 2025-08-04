@@ -1,0 +1,161 @@
+/**
+ * GOLEM DESIGN SYSTEM - COMPONENTS
+ * Copy this entire content into your css/golem-components.css file
+ */
+
+/* Buttons */
+.golem-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--golem-space-2);
+  font-family: var(--golem-font-sans);
+  font-weight: var(--golem-font-medium);
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+  height: 2.5rem;
+  padding: 0 var(--golem-space-4);
+  border: 1px solid transparent;
+  border-radius: var(--golem-radius-lg);
+  cursor: pointer;
+  transition: all var(--golem-duration-base) var(--golem-easing-ease-out);
+  user-select: none;
+  font-size: var(--golem-text-body-medium);
+}
+
+.golem-btn--primary {
+  background-color: var(--golem-color-primary-500);
+  color: var(--golem-color-text-inverse);
+  border-color: var(--golem-color-primary-500);
+}
+
+.golem-btn--primary:hover {
+  background-color: var(--golem-color-primary-600);
+  border-color: var(--golem-color-primary-600);
+  transform: translateY(-1px);
+  box-shadow: var(--golem-shadow-md);
+}
+
+.golem-btn--secondary {
+  background-color: var(--golem-color-surface-base);
+  color: var(--golem-color-text-primary);
+  border-color: var(--golem-color-border-strong);
+}
+
+.golem-btn--secondary:hover {
+  background-color: var(--golem-color-surface-raised);
+  transform: translateY(-1px);
+  box-shadow: var(--golem-shadow-md);
+}
+
+/* Cards */
+.golem-card {
+  background-color: var(--golem-color-surface-base);
+  border: 1px solid var(--golem-color-border-base);
+  border-radius: var(--golem-radius-xl);
+  box-shadow: var(--golem-shadow-sm);
+  overflow: hidden;
+  transition: all var(--golem-duration-base) var(--golem-easing-ease-out);
+}
+
+.golem-card:hover {
+  box-shadow: var(--golem-shadow-md);
+  transform: translateY(-2px);
+}
+
+.golem-card__body {
+  padding: var(--golem-space-6);
+}
+
+.golem-card__header {
+  padding: var(--golem-space-6);
+  border-bottom: 1px solid var(--golem-color-border-base);
+}
+
+.golem-card__footer {
+  padding: var(--golem-space-6);
+  border-top: 1px solid var(--golem-color-border-base);
+  background-color: var(--golem-color-surface-raised);
+}
+
+.golem-card__title {
+  font-size: var(--golem-text-headline-medium);
+  font-weight: var(--golem-font-semibold);
+  color: var(--golem-color-text-primary);
+  margin-bottom: var(--golem-space-2);
+}
+
+.golem-card__subtitle {
+  font-size: var(--golem-text-body-medium);
+  color: var(--golem-color-text-secondary);
+  margin-bottom: var(--golem-space-4);
+}
+
+/* Badges */
+.golem-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--golem-space-1) var(--golem-space-3);
+  font-size: var(--golem-text-body-small);
+  font-weight: var(--golem-font-medium);
+  line-height: 1;
+  border-radius: var(--golem-radius-full);
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.golem-badge--primary {
+  background-color: var(--golem-color-primary-100);
+  color: var(--golem-color-primary-700);
+  border: 1px solid var(--golem-color-primary-200);
+}
+
+.golem-badge--sm {
+  padding: var(--golem-space-1) var(--golem-space-2);
+  font-size: var(--golem-text-xs);
+}
+
+.golem-badge--lg {
+  padding: var(--golem-space-2) var(--golem-space-4);
+  font-size: var(--golem-text-body-medium);
+}
+
+/* Sections */
+.golem-section {
+  margin-bottom: var(--golem-space-12);
+  padding: var(--golem-space-8) 0;
+}
+
+.golem-section--secondary {
+  background-color: var(--golem-color-surface-raised);
+  padding: var(--golem-space-8) 0;
+  border-radius: var(--golem-radius-xl);
+  margin: var(--golem-space-8) 0;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .golem-grid-cols-md-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  
+  .golem-grid-cols-md-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .golem-grid-cols-lg-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  
+  .golem-grid-cols-lg-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  
+  .golem-grid-cols-lg-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}

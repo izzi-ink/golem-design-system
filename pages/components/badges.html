@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badges - Golem Design System</title>
+    
+    <!-- Design System CSS -->
+    <link rel="stylesheet" href="../../css/golem-tokens.css">
+    <link rel="stylesheet" href="../../css/golem-foundation.css">
+    <link rel="stylesheet" href="../../css/golem-components.css">
+    <link rel="stylesheet" href="../../css/site.css">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="golem-container golem-py-8">
+        <div class="golem-flex golem-items-center golem-justify-between">
+            <a href="../../index.html" class="golem-text-headline-medium" style="text-decoration: none; color: var(--golem-color-text-primary);">
+                <strong>Golem</strong> <span class="golem-badge golem-badge--primary golem-badge--sm">v0.1</span>
+            </a>
+            <div class="golem-flex golem-gap-6">
+                <a href="../getting-started.html" style="color: var(--golem-color-text-secondary); text-decoration: none;">Getting Started</a>
+                <a href="../design-tokens/colors.html" style="color: var(--golem-color-text-secondary); text-decoration: none;">Design Tokens</a>
+                <a href="badges.html" style="color: var(--golem-color-primary-600); text-decoration: none;">Components</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="golem-container">
+        <div class="golem-grid golem-grid-cols-1 golem-grid-cols-lg-4 golem-gap-8">
+            
+            <!-- Sidebar -->
+            <aside>
+                <div class="golem-card">
+                    <div class="golem-card__body">
+                        <h3 class="golem-text-headline-small golem-mb-4">Components</h3>
+                        <nav class="golem-flex golem-flex-col golem-gap-2">
+                            <a href="buttons.html" style="color: var(--golem-color-text-secondary); text-decoration: none; padding: var(--golem-space-2); border-radius: var(--golem-radius-base);">Buttons</a>
+                            <a href="cards.html" style="color: var(--golem-color-text-secondary); text-decoration: none; padding: var(--golem-space-2); border-radius: var(--golem-radius-base);">Cards</a>
+                            <a href="badges.html" style="color: var(--golem-color-primary-600); text-decoration: none; padding: var(--golem-space-2); border-radius: var(--golem-radius-base); background-color: var(--golem-color-primary-50);">Badges</a>
+                        </nav>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <div class="golem-col-span-3">
+                <header class="golem-mb-8">
+                    <h1 class="golem-text-display-large">Badges</h1>
+                    <p class="golem-text-body-large" style="color: var(--golem-color-text-secondary);">
+                        Small status and labeling components. Perfect for indicating states, counts, or categories.
+                    </p>
+                </header>
+
+                <!-- Primary Badge Section -->
+                <section class="golem-mb-12">
+                    <h2 class="golem-text-display-medium golem-mb-6">Primary Badge</h2>
+                    
+                    <div class="golem-card golem-mb-6">
+                        <div class="golem-card__header">
+                            <h3 class="golem-card__title">Brand Color Badge</h3>
+                            <p class="golem-card__subtitle">Main badge variant using primary colors</p>
+                        </div>
+                        <div class="golem-card__body">
+                            <!-- Live Example -->
+                            <div class="golem-mb-4" style="padding: var(--golem-space-6); background-color: var(--golem-color-surface-base); border: 1px solid var(--golem-color-border-base); border-radius: var(--golem-radius-base); text-align: center;">
+                                <div class="golem-flex golem-justify-center golem-gap-4 golem-items-center">
+                                    <span class="golem-badge golem-badge--primary">New</span>
+                                    <span class="golem-badge golem-badge--primary">Featured</span>
+                                    <span class="golem-badge golem-badge--primary">v2.0</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Code -->
+                            <div style="background-color: var(--golem-color-surface-raised); padding: var(--golem-space-4); border-radius: var(--golem-radius-base); font-family: var(--golem-font-mono); font-size: var(--golem-text-sm);">
+                                <code>&lt;span class="golem-badge golem-badge--primary"&gt;New&lt;/span&gt;
+&lt;span class="golem-badge golem-badge--primary"&gt;Featured&lt;/span&gt;
+&lt;span class="golem-badge golem-badge--primary"&gt;v2.0&lt;/span&gt;</code>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Badge Sizes Section -->
+                <section class="golem-mb-12">
+                    <h2 class="golem-text-display-medium golem-mb-6">Badge Sizes</h2>
+                    
+                    <div class="golem-card golem-mb-6">
+                        <div class="golem-card__header">
+                            <h3 class="golem-card__title">Size Variants</h3>
+                            <p class="golem-card__subtitle">Small, default, and large badge sizes</p>
+                        </div>
+                        <div class="golem-card__body">
+                            <!-- Live Example -->
+                            <div class="golem-mb-6" style="padding: var(--golem-space-6); background-color: var(--golem-color-surface-base); border: 1px solid var(--golem-color-border-base); border-radius: var(--golem-radius-base);">
+                                <div class="golem-flex golem-flex-col golem-gap-6">
+                                    <!-- Small Badges -->
+                                    <div class="golem-flex golem-items-center golem-gap-4">
+                                        <div style="width: 80px; font-weight: var(--golem-font-medium);">Small:</div>
+                                        <div class="golem-flex golem-gap-3">
+                                            <span class="golem-badge golem-badge--primary golem-badge--sm">Beta</span>
+                                            <span class="golem-badge golem-badge--primary golem-badge--sm">New</span>
+                                            <span class="golem-badge golem-badge--primary golem-badge--sm">Hot</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Default Badges -->
+                                    <div class="golem-flex golem-items-center golem-gap-4">
+                                        <div style="width: 80px; font-weight: var(--golem-font-medium);">Default:</div>
+                                        <div class="golem-flex golem-gap-3">
+                                            <span class="golem-badge golem-badge--primary">Featured</span>
+                                            <span class="golem-badge golem-badge--primary">Popular</span>
+                                            <span class="golem-badge golem-badge--primary">Trending</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Large Badges -->
+                                    <div class="golem-flex golem-items-center golem-gap-4">
+                                        <div style="width: 80px; font-weight: var(--golem-font-medium);">Large:</div>
+                                        <div class="golem-flex golem-gap-3">
+                                            <span class="golem-badge golem-badge--primary golem-badge--lg">Premium</span>
+                                            <span class="golem-badge golem-badge--primary golem-badge--lg">Enterprise</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Code -->
+                            <div style="background-color: var(--golem-color-surface-raised); padding: var(--golem-space-4); border-radius: var(--golem-radius-base); font-family: var(--golem-font-mono); font-size: var(--golem-text-sm);">
+                                <code>&lt;!-- Small badges --&gt;
+&lt;span class="golem-badge golem-badge--primary golem-badge--sm"&gt;Beta&lt;/span&gt;
+
+&lt;!-- Default badges --&gt;
+&lt;span class="golem-badge golem-badge--primary"&gt;Featured&lt;/span&gt;
+
+&lt;!-- Large badges --&gt;
+&lt;span class="golem-badge golem-badge--primary golem-badge--lg"&gt;Premium&lt;/span&gt;</code>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Badges in Context Section -->
+                <section class="golem-mb-12">
+                    <h2 class="golem-text-display-medium golem-mb-6">Badges in Context</h2>
+                    
+                    <div class="golem-grid golem-grid-cols-1 golem-grid-cols-lg-2 golem-gap-6">
+                        <!-- With Buttons -->
+                        <div class="golem-card">
+                            <div class="golem-card__header">
+                                <h3 class="golem-card__title">With Buttons</h3>
+                                <p class="golem-card__subtitle">Badges combined with buttons</p>
+                            </div>
+                            <div class="golem-card__body">
+                                <!-- Live Example -->
+                                <div class="golem-mb-4" style="padding: var(--golem-space-4); background-color: var(--golem-color-surface-raised); border: 1px solid var(--golem-color-border-base); border-radius: var(--golem-radius-base);">
+                                    <div class="golem-flex golem-flex-col golem-gap-3">
+                                        <button class="golem-btn golem-btn--primary">
+                                            Download
+                                            <span class="golem-badge golem-badge--primary golem-badge--sm" style="margin-left: var(--golem-space-2); background-color: var(--golem-color-white); color: var(--golem-color-primary-600);">New</span>
+                                        </button>
+                                        <button class="golem-btn golem-btn--secondary">
+                                            Features
+                                            <span class="golem-badge golem-badge--primary golem-badge--sm" style="margin-left: var(--golem-space-2);">Beta</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                                <!-- Code -->
+                                <div style="background-color: var(--golem-color-surface-raised); padding: var(--golem-space-3); border-radius: var(--golem-radius-base); font-family: var(--golem-font-mono); font-size: var(--golem-text-xs);">
+                                    <code>&lt;button class="golem-btn golem-btn--primary"&gt;
+  Download 
+  &lt;span class="golem-badge golem-badge--primary golem-badge--sm"&gt;New&lt;/span&gt;
+&lt;/button&gt;</code>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- With Cards -->
+                        <div class="golem-card">
+                            <div class="golem-card__header">
+                                <h3 class="golem-card__title">With Cards</h3>
+                                <p class="golem-card__subtitle">Badges in card headers</p>
+                            </div>
+                            <div class="golem-card__body">
+                                <!-- Live Example -->
+                                <div class="golem-mb-4" style="padding: var(--golem-space-4); background-color: var(--golem-color-surface-raised); border: 1px solid var(--golem-color-border-base); border-radius: var(--golem-radius-base);">
+                                    <div class="golem-card" style="max-width: 250px;">
+                                        <div class="golem-card__header">
+                                            <div class="golem-flex golem-items-center golem-justify-between golem-mb-2">
+                                                <h4 style="font-size: var(--golem-text-body-large); margin: 0;">Pro Plan</h4>
+                                                <span class="golem-badge golem-badge--primary golem-badge--sm">Popular</span>
+                                            </div>
+                                            <p style="margin: 0; font-size: var(--golem-text-body-small); color: var(--golem-color-text-secondary);">$29/month</p>
+                                        </div>
+                                        <div class="golem-card__body" style="padding: var(--golem-space-4);">
+                                            <p style="margin: 0; font-size: var(--golem-text-body-small);">Advanced features for growing teams.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Code -->
+                                <div style="background-color: var(--golem-color-surface-raised); padding: var(--golem-space-3); border-radius: var(--golem-radius-base); font-family: var(--golem-font-mono); font-size: var(--golem-text-xs);">
+                                    <code>&lt;div class="golem-card__header"&gt;
+  &lt;div class="golem-flex golem-justify-between"&gt;
+    &lt;h3&gt;Pro Plan&lt;/h3&gt;
+    &lt;span class="golem-badge golem-badge--primary"&gt;Popular&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Status Badges Section -->
+                <section class="golem-mb-12">
+                    <h2 class="golem-text-display-medium golem-mb-6">Status Badges</h2>
+                    
+                    <div class="golem-card">
+                        <div class="golem-card__header">
+                            <h3 class="golem-card__title">Common Status Examples</h3>
+                            <p class="golem-card__subtitle">Typical badge use cases for status indication</p>
+                        </div>
+                        <div class="golem-card__body">
+                            <!-- Live Example -->
+                            <div class="golem-mb-6" style="padding: var(--golem-space-6); background-color: var(--golem-color-surface-base); border: 1px solid var(--golem-color-border-base); border-radius: var(--golem-radius-base);">
+                                <div class="golem-grid golem-grid-cols-1 golem-grid-cols-lg-2 golem-gap-8">
+                                    <!-- Version Badges -->
+                                    <div>
+                                        <h4 class="golem-text-headline-small golem-mb-3">Version Status</h4>
+                                        <div class="golem-flex golem-flex-col golem-gap-3">
+                                            <div class="golem-flex golem-items-center golem-gap-3">
+                                                <span class="golem-badge golem-badge--primary">v2.1</span>
+                                                <span style="color: var(--golem-color-text-secondary);">Current version</span>
+                                            </div>
+                                            <div class="golem-flex golem-items-center golem-gap-3">
+                                                <span class="golem-badge golem-badge--primary">Beta</span>
+                                                <span style="color: var(--golem-color-text-secondary);">Pre-release</span>
+                                            </div>
+                                            <div class="golem-flex golem-items-center golem-gap-3">
+                                                <span class="golem-badge golem-badge--primary">Alpha</span>
+                                                <span style="color: var(--golem-color-text-secondary);">Early access</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Feature Badges -->
+                                    <div>
+                                        <h4 class="golem-text-headline-small golem-mb-3">Feature Status</h4>
+                                        <div class="golem-flex golem-flex-col golem-gap-3">
+                                            <div class="golem-flex golem-items-center golem-gap-3">
+                                                <span class="golem-badge golem-badge--primary">New</span>
+                                                <span style="color: var(--golem-color-text-secondary);">Recently added</span>
+                                            </div>
+                                            <div class="golem-flex golem-items-center golem-gap-3">
+                                                <span class="golem-badge golem-badge--primary">Updated</span>
+                                                <span style="color: var(--golem-color-text-secondary);">Recently improved</span>
+                                            </div>
+                                            <div class="golem-flex golem-items-center golem-gap-3">
+                                                <span class="golem-badge golem-badge--primary">Popular</span>
+                                                <span style="color: var(--golem-color-text-secondary);">Highly used</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Code -->
+                            <div style="background-color: var(--golem-color-surface-raised); padding: var(--golem-space-4); border-radius: var(--golem-radius-base); font-family: var(--golem-font-mono); font-size: var(--golem-text-sm);">
+                                <code>&lt;!-- Version badges --&gt;
+&lt;span class="golem-badge golem-badge--primary"&gt;v2.1&lt;/span&gt;
+&lt;span class="golem-badge golem-badge--primary"&gt;Beta&lt;/span&gt;
+
+&lt;!-- Feature badges --&gt;
+&lt;span class="golem-badge golem-badge--primary"&gt;New&lt;/span&gt;
+&lt;span class="golem-badge golem-badge--primary"&gt;Popular&lt;/span&gt;</code>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- AI Integration Section -->
+                <section class="golem-mb-12">
+                    <h2 class="golem-text-display-medium golem-mb-6">AI Integration</h2>
+                    
+                    <div class="golem-card" style="background: linear-gradient(135deg, var(--golem-color-primary-50) 0%, var(--golem-color-primary-100) 100%); border-color: var(--golem-color-primary-200);">
+                        <div class="golem-card__body">
+                            <div style="display: flex; align-items: center; gap: var(--golem-space-3); margin-bottom: var(--golem-space-4);">
+                                <span style="font-size: 2rem;">🤖</span>
+                                <h3 class="golem-card__title golem-mb-0" style="color: var(--golem-color-primary-700);">Semantic Badge Labels</h3>
+                            </div>
+                            
+                            <p style="color: var(--golem-color-primary-700); margin-bottom: var(--golem-space-4);">
+                                Golem badges use meaningful text content that AI can understand and generate contextually:
+                            </p>
+                            
+                            <div class="golem-grid golem-grid-cols-1 golem-grid-cols-lg-2 golem-gap-6">
+                                <!-- AI Prompt Example -->
+                                <div style="background-color: var(--golem-color-surface-base); border: 1px solid var(--golem-color-border-base); border-radius: var(--golem-radius-base); padding: var(--golem-space-4);">
+                                    <h4 style="margin-bottom: var(--golem-space-2); color: var(--golem-color-text-primary);">💬 AI Prompt</h4>
+                                    <p style="font-style: italic; margin-bottom: var(--golem-space-3); color: var(--golem-color-text-secondary);">
+                                        "Add a badge to show this is a new feature using Golem components"
+                                    </p>
+                                    <h4 style="margin-bottom: var(--golem-space-2); color: var(--golem-color-text-primary);">🎯 AI Output</h4>
+                                    <div style="background-color: var(--golem-color-surface-raised); padding: var(--golem-space-3); border-radius: var(--golem-radius-base); font-family: var(--golem-font-mono); font-size: var(--golem-text-sm);">
+                                        <code>&lt;span class="golem-badge golem-badge--primary"&gt;New&lt;/span&gt;</code>
+                                    </div>
+                                </div>
+
+                                <!-- Badge Guidelines -->
+                                <div>
+                                    <h4 style="color: var(--golem-color-primary-700); margin-bottom: var(--golem-space-3);">✅ AI-Friendly Content</h4>
+                                    <ul style="list-style: none; padding: 0; color: var(--golem-color-primary-700);">
+                                        <li class="golem-mb-2">• <strong>New</strong> - Recently added features</li>
+                                        <li class="golem-mb-2">• <strong>Beta</strong> - Pre-release functionality</li>
+                                        <li class="golem-mb-2">• <strong>Popular</strong> - Highly used items</li>
+                                        <li class="golem-mb-2">• <strong>Featured</strong> - Highlighted content</li>
+                                        <li class="golem-mb-2">• <strong>v2.0</strong> - Version numbers</li>
+                                        <li class="golem-mb-2">• <strong>Premium</strong> - Paid features</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Usage Guidelines -->
+                <section class="golem-mb-12">
+                    <h2 class="golem-text-display-medium golem-mb-6">Usage Guidelines</h2>
+                    
+                    <div class="golem-grid golem-grid-cols-1 golem-grid-cols-lg-2 golem-gap-6">
+                        <!-- Do Example -->
+                        <div style="background-color: var(--golem-color-success-light, #ecfdf5); border: 2px solid var(--golem-color-success-base, #10b981); border-radius: var(--golem-radius-lg); padding: var(--golem-space-4);">
+                            <h4 style="color: var(--golem-color-success-strong, #047857); margin-bottom: var(--golem-space-3);">✅ Do</h4>
+                            <ul style="color: var(--golem-color-success-strong, #047857); list-style: none; padding: 0;">
+                                <li class="golem-mb-2">• Use badges for status and categorization</li>
+                                <li class="golem-mb-2">• Keep badge text short (1-2 words)</li>
+                                <li class="golem-mb-2">• Use meaningful, descriptive labels</li>
+                                <li class="golem-mb-2">• Choose appropriate sizes for context</li>
+                                <li class="golem-mb-2">• Use primary variant consistently</li>
+                            </ul>
+                        </div>
+
+                        <!-- Don't Example -->
+                        <div style="background-color: var(--golem-color-error-light, #fef2f2); border: 2px solid var(--golem-color-error-base, #ef4444); border-radius: var(--golem-radius-lg); padding: var(--golem-space-4);">
+                            <h4 style="color: var(--golem-color-error-strong, #b91c1c); margin-bottom: var(--golem-space-3);">❌ Don't</h4>
+                            <ul style="color: var(--golem-color-error-strong, #b91c1c); list-style: none; padding: 0;">
+                                <li class="golem-mb-2">• Use badges for long text content</li>
+                                <li class="golem-mb-2">• Overuse badges on a single page</li>
+                                <li class="golem-mb-2">• Use vague labels like "Item" or "Thing"</li>
+                                <li class="golem-mb-2">• Mix different badge styles randomly</li>
+                                <li class="golem-mb-2">• Use badges as buttons or links</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Component API -->
+                <section class="golem-mb-12">
+                    <h2 class="golem-text-display-medium golem-mb-6">Component API</h2>
+                    
+                    <div class="golem-card">
+                        <div class="golem-card__header">
+                            <h3 class="golem-card__title">CSS Classes</h3>
+                            <p class="golem-card__subtitle">Available classes for badge components</p>
+                        </div>
+                        <div class="golem-card__body">
+                            <table style="width: 100%; border-collapse: collapse;">
+                                <thead>
+                                    <tr style="border-bottom: 1px solid var(--golem-color-border-base);">
+                                        <th style="text-align: left; padding: var(--golem-space-3); font-weight: var(--golem-font-semibold);">Class</th>
+                                        <th style="text-align: left; padding: var(--golem-space-3); font-weight: var(--golem-font-semibold);">Description</th>
+                                        <th style="text-align: left; padding: var(--golem-space-3); font-weight: var(--golem-font-semibold);">Usage</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="border-bottom: 1px solid var(--golem-color-border-base);">
+                                        <td style="padding: var(--golem-space-3); font-family: var(--golem-font-mono); font-size: var(--golem-text-sm); background-color: var(--golem-color-surface-raised);">.golem-badge</td>
+                                        <td style="padding: var(--golem-space-3);">Base badge styles</td>
+                                        <td style="padding: var(--golem-space-3);">Required on all badges</td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid var(--golem-color-border-base);">
+                                        <td style="padding: var(--golem-space-3); font-family: var(--golem-font-mono); font-size: var(--golem-text-sm); background-color: var(--golem-color-surface-raised);">.golem-badge--primary</td>
+                                        <td style="padding: var(--golem-space-3);">Primary brand variant</td>
+                                        <td style="padding: var(--golem-space-3);">Main badge styling</td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid var(--golem-color-border-base);">
+                                        <td style="padding: var(--golem-space-3); font-family: var(--golem-font-mono); font-size: var(--golem-text-sm); background-color: var(--golem-color-surface-raised);">.golem-badge--sm</td>
+                                        <td style="padding: var(--golem-space-3);">Small badge size</td>
+                                        <td style="padding: var(--golem-space-3);">Compact spaces, inline text</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: var(--golem-space-3); font-family: var(--golem-font-mono); font-size: var(--golem-text-sm); background-color: var(--golem-color-surface-raised);">.golem-badge--lg</td>
+                                        <td style="padding: var(--golem-space-3);">Large badge size</td>
+                                        <td style="padding: var(--golem-space-3);">Emphasis, standalone use</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Next Steps -->
+                <section class="golem-mb-12">
+                    <div class="golem-card golem-card--raised">
+                        <div class="golem-card__body text-center">
+                            <h2 class="golem-text-headline-medium golem-mb-4">🎉 Component Library Complete!</h2>
+                            <p class="golem-mb-6">You've explored all the core Golem components. Ready to start building AI-enhanced interfaces?</p>
+                            <div class="golem-flex golem-justify-center golem-gap-4">
+                                <a href="../getting-started.html" class="golem-btn golem-btn--primary">Start Building</a>
+                                <a href="cards.html" class="golem-btn golem-btn--secondary">← Cards</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="golem-container golem-py-8" style="border-top: 1px solid var(--golem-color-border-base); margin-top: var(--golem-space-16);">
+        <div class="golem-flex golem-items-center golem-justify-between">
+            <p style="color: var(--golem-color-text-tertiary); margin: 0;">© 2025 Golem Design System</p>
+            <a href="../../index.html" style="color: var(--golem-color-text-secondary); text-decoration: none;">← Back to Home</a>
+        </div>
+    </footer>
+</body>
+</html>

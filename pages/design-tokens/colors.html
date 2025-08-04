@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors - Golem Design System</title>
+    
+    <!-- Design System CSS -->
+    <link rel="stylesheet" href="../../css/golem-tokens.css">
+    <link rel="stylesheet" href="../../css/golem-foundation.css">
+    <link rel="stylesheet" href="../../css/golem-components.css">
+    <link rel="stylesheet" href="../../css/site.css">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="golem-container golem-py-8">
+        <div class="golem-flex golem-items-center golem-justify-between">
+            <a href="../../index.html" class="golem-text-headline-medium" style="text-decoration: none; color: var(--golem-color-text-primary);">
+                <strong>Golem</strong> <span class="golem-badge golem-badge--primary golem-badge--sm">v0.1</span>
+            </a>
+            <div class="golem-flex golem-gap-6">
+                <a href="../getting-started.html" style="color: var(--golem-color-text-secondary); text-decoration: none;">Getting Started</a>
+                <a href="colors.html" style="color: var(--golem-color-primary-600); text-decoration: none;">Design Tokens</a>
+                <a href="../components/buttons.html" style="color: var(--golem-color-text-secondary); text-decoration: none;">Components</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="golem-container">
+        <div class="golem-grid golem-grid-cols-1 golem-grid-cols-lg-4 golem-gap-8">
+            
+            <!-- Sidebar -->
+            <aside>
+                <div class="golem-card">
+                    <div class="golem-card__body">
+                        <h3 class="golem-text-headline-small golem-mb-4">Design Tokens</h3>
+                        <nav class="golem-flex golem-flex-col golem-gap-2">
+                            <a href="colors.html" style="color: var(--golem-color-primary-600); text-decoration: none; padding: var(--golem-space-2); border-radius: var(--golem-radius-base); background-color: var(--golem-color-primary-50);">Colors</a>
+                            <a href="typography.html" style="color: var(--golem-color-text-secondary); text-decoration: none; padding: var(--golem-space-2); border-radius: var(--golem-radius-base);">Typography</a>
+                            <a href="spacing.html" style="color: var(--golem-color-text-secondary); text-decoration: none; padding: var(--golem-space-2); border-radius: var(--golem-radius-base);">Spacing</a>
+                        </nav>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <div class="golem-col-span-3">
+                <header class="golem-mb-8">
+                    <h1 class="golem-text-display-large">Colors</h1>
+                    <p class="golem-text-body-large" style="color: var(--golem-color-text-secondary);">
+                        Semantic color system designed for both human designers and AI tools.
+                    </p>
+                </header>
+
+                <!-- Primary Colors Section -->
+                <section class="golem-mb-12">
+                    <h2 class="golem-text-display-medium golem-mb-6">Primary Colors</h2>
+                    
+                    <div class="golem-grid golem-grid-cols-1 golem-grid-cols-lg-3 golem-gap-6 golem-mb-8">
+                        <!-- Primary 500 -->
+                        <div class="golem-card">
+                            <div class="golem-card__body">
+                                <div style="width: 100%; height: 80px; background-color: var(--golem-color-primary-500); border-radius: var(--golem-radius-lg); border: 1px solid var(--golem-color-border-base); margin-bottom: var(--golem-space-4);"></div>
+                                <h3 class="golem-card__title">Primary 500</h3>
+                                <p style="font-family: var(--golem-font-mono); font-size: var(--golem-text-sm); background-color: var(--golem-color-surface-raised); padding: var(--golem-space-2); border-radius: var(--golem-radius-base); margin-bottom: var(--golem-space-2);">--golem-color-primary-500</p>
+                                <p class="golem-card__subtitle golem-mb-0">Main brand color for primary actions</p>
+                            </div>
+                        </div>
+
+                        <!-- Primary 600 -->
+                        <div class="golem-card">
+                            <div class="golem-card__body">
+                                <div style="width: 100%; height: 80px; background-color: var(--golem-color-primary-600); border-radius: var(--golem-radius-lg); border: 1px solid var(--golem-color-border-base); margin-bottom: var(--golem-space-4);"></div>
+                                <h3 class="golem-card__title">Primary 600</h3>
+                                <p style="font-family: var(--golem-font-mono); font-size: var(--golem-text-sm); background-color: var(--golem-color-surface-raised); padding: var(--golem-space-2); border-radius: var(--golem-radius-base); margin-bottom: var(--golem-space-2);">--golem-color-primary-600</p>
+                                <p class="golem-card__subtitle golem-mb-0">Hover state for primary elements</p>
+                            </div>
+                        </div>
+
+                        <!-- Primary 700 -->
+                        <div class="golem-card">
+                            <div class="golem-card__body">
+                                <div style="width: 100%; height: 80px; background-color: var(--golem-color-primary-700); border-radius: var(--golem-radius-lg); border: 1px solid var(--golem-color-border-base); margin-bottom: var(--golem-space-4);"></div>
+                                <h3 class="golem-card__title">Primary 700</h3>
+                                <p style="font-family: var(--golem-font-mono); font-size: var(--golem-text-sm); background-color: var(--golem-color-surface-raised); padding: var(--golem-space-2); border-radius: var(--golem-radius-base); margin-bottom: var(--golem-space-2);">--golem-color-primary-700</p>
+                                <p class="golem-card__subtitle golem-mb-0">Active state for primary elements</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Usage Example -->
+                    <div class="golem-card">
+                        <div class="golem-card__header">
+                            <h3 class="golem-card__title">Usage Example</h3>
+                        </div>
+                        <div class="golem-card__body">
+                            <!-- Live Example -->
+                            <div class="golem-mb-4" style="padding: var(--golem-space-6); background-color: var(--golem-color-surface-base); border: 1px solid var(--golem-color-border-base); border-radius: var(--golem-radius-base);">
+                                <div class="golem-flex golem-gap-4">
+                                    <button class="golem-btn golem-btn--primary">Primary Button</button>
+                                    <button class="golem-btn golem-btn--secondary">Secondary Button</button>
+                                </div>
+                            </div>
+                            
+                            <!-- Code -->
+                            <div style="background-color: var(--golem-color-surface-raised); padding: var(--golem-space-4); border-radius: var(--golem-radius-base); font-family: var(--golem-font-mono); font-size: var(--golem-text-sm);">
+                                <code>&lt;button class="golem-btn golem-btn--primary"&gt;Primary Button&lt;/button&gt;
+&lt;button class="golem-btn golem-btn--secondary"&gt;Secondary Button&lt;/button&gt;</code>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Gray Scale Section -->
+                <section class="golem-mb-12">
+                    <h2 class="golem-text-display-medium golem-mb-6">Gray Scale</h2>
+                    
+                    <div class="golem-grid golem-grid-cols-2 golem-grid-cols-lg-4 golem-gap-4">
+                        <!-- Gray 50 -->
+                        <div class="golem-card">
+                            <div class="golem-card__body" style="padding: var(--golem-space-4);">
+                                <div style="width: 100%; height: 60px; background-color: var(--golem-color-gray-50); border-radius: var(--golem-radius-base); border: 1px solid var(--golem-color-border-base); margin-bottom: var(--golem-space-3);"></div>
+                                <h4 style="font-size: var(--golem-text-body-medium); margin-bottom: var(--golem-space-1);">Gray 50</h4>
+                                <p style="font-family: var(--golem-font-mono); font-size: var(--golem-text-xs); margin: 0;">--golem-color-gray-50</p>
+                            </div>
+                        </div>
+
+                        <!-- Gray 100 -->
+                        <div class="golem-card">
+                            <div class="golem-card__body" style="padding: var(--golem-space-4);">
+                                <div style="width: 100%; height: 60px; background-color: var(--golem-color-gray-100); border-radius: var(--golem-radius-base); border: 1px solid var(--golem-color-border-base); margin-bottom: var(--golem-space-3);"></div>
+                                <h4 style="font-size: var(--golem-text-body-medium); margin-bottom: var(--golem-space-1);">Gray 100</h4>
+                                <p style="font-family: var(--golem-font-mono); font-size: var(--golem-text-xs); margin: 0;">--golem-color-gray-100</p>
+                            </div>
+                        </div>
+
+                        <!-- Gray 500 -->
+                        <div class="golem-card">
+                            <div class="golem-card__body" style="padding: var(--golem-space-4);">
+                                <div style="width: 100%; height: 60px; background-color: var(--golem-color-gray-500); border-radius: var(--golem-radius-base); border: 1px solid var(--golem-color-border-base); margin-bottom: var(--golem-space-3);"></div>
+                                <h4 style="font-size: var(--golem-text-body-medium); margin-bottom: var(--golem-space-1);">Gray 500</h4>
+                                <p style="font-family: var(--golem-font-mono); font-size: var(--golem-text-xs); margin: 0;">--golem-color-gray-500</p>
+                            </div>
+                        </div>
+
+                        <!-- Gray 900 -->
+                        <div class="golem-card">
+                            <div class="golem-card__body" style="padding: var(--golem-space-4);">
+                                <div style="width: 100%; height: 60px; background-color: var(--golem-color-gray-900); border-radius: var(--golem-radius-base); border: 1px solid var(--golem-color-border-base); margin-bottom: var(--golem-space-3);"></div>
+                                <h4 style="font-size: var(--golem-text-body-medium); margin-bottom: var(--golem-space-1);">Gray 900</h4>
+                                <p style="font-family: var(--golem-font-mono); font-size: var(--golem-text-xs); margin: 0;">--golem-color-gray-900</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Semantic Colors Section -->
+                <section class="golem-mb-12">
+                    <h2 class="golem-text-display-medium golem-mb-6">Semantic Colors</h2>
+                    
+                    <div class="golem-card golem-mb-6">
+                        <div class="golem-card__body">
+                            <p class="golem-mb-4">These semantic color tokens help AI understand the <strong>purpose</strong> of colors, not just their appearance.</p>
+                            
+                            <div class="golem-grid golem-grid-cols-1 golem-grid-cols-lg-2 golem-gap-6">
+                                <div>
+                                    <h4 class="golem-text-headline-small golem-mb-3">Text Colors</h4>
+                                    <div class="golem-flex golem-flex-col golem-gap-3">
+                                        <div class="golem-flex golem-items-center golem-gap-3">
+                                            <div style="width: 24px; height: 24px; background-color: var(--golem-color-text-primary); border-radius: var(--golem-radius-base); border: 1px solid var(--golem-color-border-base);"></div>
+                                            <span style="font-family: var(--golem-font-mono); font-size: var(--golem-text-sm);">--golem-color-text-secondary</span>
+                                        </div>
+                                        <div class="golem-flex golem-items-center golem-gap-3">
+                                            <div style="width: 24px; height: 24px; background-color: var(--golem-color-text-tertiary); border-radius: var(--golem-radius-base); border: 1px solid var(--golem-color-border-base);"></div>
+                                            <span style="font-family: var(--golem-font-mono); font-size: var(--golem-text-sm);">--golem-color-text-tertiary</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <h4 class="golem-text-headline-small golem-mb-3">Surface Colors</h4>
+                                    <div class="golem-flex golem-flex-col golem-gap-3">
+                                        <div class="golem-flex golem-items-center golem-gap-3">
+                                            <div style="width: 24px; height: 24px; background-color: var(--golem-color-surface-base); border-radius: var(--golem-radius-base); border: 1px solid var(--golem-color-border-base);"></div>
+                                            <span style="font-family: var(--golem-font-mono); font-size: var(--golem-text-sm);">--golem-color-surface-base</span>
+                                        </div>
+                                        <div class="golem-flex golem-items-center golem-gap-3">
+                                            <div style="width: 24px; height: 24px; background-color: var(--golem-color-surface-raised); border-radius: var(--golem-radius-base); border: 1px solid var(--golem-color-border-base);"></div>
+                                            <span style="font-family: var(--golem-font-mono); font-size: var(--golem-text-sm);">--golem-color-surface-raised</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- AI Integration Section -->
+                <section class="golem-mb-12">
+                    <h2 class="golem-text-display-medium golem-mb-6">AI Integration</h2>
+                    
+                    <div class="golem-card" style="background: linear-gradient(135deg, var(--golem-color-primary-50) 0%, var(--golem-color-primary-100) 100%); border-color: var(--golem-color-primary-200);">
+                        <div class="golem-card__body">
+                            <div style="display: flex; align-items: center; gap: var(--golem-space-3); margin-bottom: var(--golem-space-4);">
+                                <span style="font-size: 2rem;">🤖</span>
+                                <h3 class="golem-card__title golem-mb-0" style="color: var(--golem-color-primary-700);">AI-Friendly Color Names</h3>
+                            </div>
+                            
+                            <p style="color: var(--golem-color-primary-700); margin-bottom: var(--golem-space-4);">
+                                Instead of using abstract names like "blue-500", Golem uses semantic names that AI can understand:
+                            </p>
+                            
+                            <div class="golem-grid golem-grid-cols-1 golem-grid-cols-lg-2 golem-gap-6">
+                                <div>
+                                    <h4 style="color: var(--golem-color-primary-700); margin-bottom: var(--golem-space-3);">✅ AI-Friendly</h4>
+                                    <ul style="list-style: none; padding: 0; color: var(--golem-color-primary-700);">
+                                        <li class="golem-mb-2"><code>primary</code> - Main brand actions</li>
+                                        <li class="golem-mb-2"><code>text-primary</code> - Main text content</li>
+                                        <li class="golem-mb-2"><code>surface-raised</code> - Elevated elements</li>
+                                    </ul>
+                                </div>
+                                
+                                <div>
+                                    <h4 style="color: var(--golem-color-primary-700); margin-bottom: var(--golem-space-3);">❌ Abstract Names</h4>
+                                    <ul style="list-style: none; padding: 0; color: var(--golem-color-primary-700);">
+                                        <li class="golem-mb-2"><code>blue-500</code> - What's it for?</li>
+                                        <li class="golem-mb-2"><code>gray-900</code> - When to use?</li>
+                                        <li class="golem-mb-2"><code>slate-100</code> - What purpose?</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Usage Guidelines -->
+                <section class="golem-mb-12">
+                    <h2 class="golem-text-display-medium golem-mb-6">Usage Guidelines</h2>
+                    
+                    <div class="golem-grid golem-grid-cols-1 golem-grid-cols-lg-2 golem-gap-6">
+                        <!-- Do Example -->
+                        <div style="background-color: var(--golem-color-success-light, #ecfdf5); border: 2px solid var(--golem-color-success-base, #10b981); border-radius: var(--golem-radius-lg); padding: var(--golem-space-4);">
+                            <h4 style="color: var(--golem-color-success-strong, #047857); margin-bottom: var(--golem-space-3);">✅ Do</h4>
+                            <p style="color: var(--golem-color-success-strong, #047857); margin-bottom: var(--golem-space-3);">Use semantic color tokens for consistent AI generation:</p>
+                            <div style="background-color: var(--golem-color-surface-raised); padding: var(--golem-space-3); border-radius: var(--golem-radius-base); font-family: var(--golem-font-mono); font-size: var(--golem-text-sm);">
+                                <code>color: var(--golem-color-text-primary);
+background: var(--golem-color-surface-base);</code>
+                            </div>
+                        </div>
+
+                        <!-- Don't Example -->
+                        <div style="background-color: var(--golem-color-error-light, #fef2f2); border: 2px solid var(--golem-color-error-base, #ef4444); border-radius: var(--golem-radius-lg); padding: var(--golem-space-4);">
+                            <h4 style="color: var(--golem-color-error-strong, #b91c1c); margin-bottom: var(--golem-space-3);">❌ Don't</h4>
+                            <p style="color: var(--golem-color-error-strong, #b91c1c); margin-bottom: var(--golem-space-3);">Use hardcoded colors that AI can't understand:</p>
+                            <div style="background-color: var(--golem-color-surface-raised); padding: var(--golem-space-3); border-radius: var(--golem-radius-base); font-family: var(--golem-font-mono); font-size: var(--golem-text-sm);">
+                                <code>color: #111827;
+background: #ffffff;</code>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Next Steps -->
+                <section class="golem-mb-12">
+                    <div class="golem-card golem-card--raised">
+                        <div class="golem-card__body text-center">
+                            <h2 class="golem-text-headline-medium golem-mb-4">Explore More Design Tokens</h2>
+                            <p class="golem-mb-6">Continue exploring Golem's systematic approach to design.</p>
+                            <div class="golem-flex golem-justify-center golem-gap-4">
+                                <a href="typography.html" class="golem-btn golem-btn--primary">Typography →</a>
+                                <a href="spacing.html" class="golem-btn golem-btn--secondary">Spacing</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="golem-container golem-py-8" style="border-top: 1px solid var(--golem-color-border-base); margin-top: var(--golem-space-16);">
+        <div class="golem-flex golem-items-center golem-justify-between">
+            <p style="color: var(--golem-color-text-tertiary); margin: 0;">© 2025 Golem Design System</p>
+            <a href="../../index.html" style="color: var(--golem-color-text-secondary); text-decoration: none;">← Back to Home</a>
+        </div>
+    </footer>
+</body>
+</html>(--golem-font-mono); font-size: var(--golem-text-sm);">--golem-color-text-primary</span>
+                                        </div>
+                                        <div class="golem-flex golem-items-center golem-gap-3">
+                                            <div style="width: 24px; height: 24px; background-color: var(--golem-color-text-secondary); border-radius: var(--golem-radius-base); border: 1px solid var(--golem-color-border-base);"></div>
+                                            <span style="font-family: var

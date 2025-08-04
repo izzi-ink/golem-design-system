@@ -1,0 +1,184 @@
+/**
+ * GOLEM DESIGN SYSTEM - FOUNDATION STYLES
+ * Copy this entire content into your css/golem-foundation.css file
+ */
+
+/* Reset and Base Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--golem-color-surface-base);
+  color: var(--golem-color-text-primary);
+  font-family: var(--golem-font-sans);
+  font-size: var(--golem-text-body-medium);
+  font-weight: var(--golem-font-normal);
+  line-height: var(--golem-leading-normal);
+  overflow-x: hidden;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--golem-font-sans);
+  font-weight: var(--golem-font-semibold);
+  line-height: var(--golem-leading-tight);
+  color: var(--golem-color-text-primary);
+  margin-bottom: var(--golem-space-4);
+}
+
+h1 {
+  font-size: var(--golem-text-display-medium);
+  font-weight: var(--golem-font-bold);
+}
+
+h2 {
+  font-size: var(--golem-text-display-medium);
+}
+
+h3 {
+  font-size: var(--golem-text-headline-medium);
+}
+
+p {
+  margin-bottom: var(--golem-space-4);
+  line-height: var(--golem-leading-normal);
+}
+
+/* Layout Utilities */
+.golem-container {
+  width: 100%;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--golem-space-4);
+  padding-right: var(--golem-space-4);
+}
+
+/* Flexbox utilities */
+.golem-flex {
+  display: flex;
+}
+
+.golem-flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.golem-items-center {
+  align-items: center;
+}
+
+.golem-justify-center {
+  justify-content: center;
+}
+
+.golem-justify-between {
+  justify-content: space-between;
+}
+
+.golem-gap-2 { gap: var(--golem-space-2); }
+.golem-gap-3 { gap: var(--golem-space-3); }
+.golem-gap-4 { gap: var(--golem-space-4); }
+.golem-gap-6 { gap: var(--golem-space-6); }
+.golem-gap-8 { gap: var(--golem-space-8); }
+
+/* Grid utilities */
+.golem-grid {
+  display: grid;
+}
+
+.golem-grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+.golem-grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.golem-grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+/* Spacing utilities */
+.golem-m-0 { margin: 0; }
+.golem-mb-0 { margin-bottom: 0; }
+.golem-mb-2 { margin-bottom: var(--golem-space-2); }
+.golem-mb-4 { margin-bottom: var(--golem-space-4); }
+.golem-mb-6 { margin-bottom: var(--golem-space-6); }
+.golem-mb-8 { margin-bottom: var(--golem-space-8); }
+.golem-mb-12 { margin-bottom: var(--golem-space-12); }
+
+.golem-mt-4 { margin-top: var(--golem-space-4); }
+.golem-mt-6 { margin-top: var(--golem-space-6); }
+.golem-mt-8 { margin-top: var(--golem-space-8); }
+
+.golem-p-4 { padding: var(--golem-space-4); }
+.golem-p-6 { padding: var(--golem-space-6); }
+.golem-p-8 { padding: var(--golem-space-8); }
+
+.golem-py-8 { 
+  padding-top: var(--golem-space-8); 
+  padding-bottom: var(--golem-space-8); 
+}
+
+/* Typography Classes */
+.golem-text-display-large {
+  font-size: var(--golem-text-display-large);
+  font-weight: var(--golem-font-bold);
+  line-height: var(--golem-leading-tight);
+}
+
+.golem-text-display-medium {
+  font-size: var(--golem-text-display-medium);
+  font-weight: var(--golem-font-bold);
+  line-height: var(--golem-leading-tight);
+}
+
+.golem-text-headline-medium {
+  font-size: var(--golem-text-headline-medium);
+  font-weight: var(--golem-font-semibold);
+}
+
+.golem-text-headline-small {
+  font-size: var(--golem-text-headline-small);
+  font-weight: var(--golem-font-semibold);
+}
+
+.golem-text-body-large {
+  font-size: var(--golem-text-body-large);
+}
+
+.golem-text-body-medium {
+  font-size: var(--golem-text-body-medium);
+}
+
+.golem-text-body-small {
+  font-size: var(--golem-text-body-small);
+}
+
+.golem-text-3xl {
+  font-size: var(--golem-text-3xl);
+}
+
+/* Screen reader only */
+.golem-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Focus management */
+:focus-visible {
+  outline: 2px solid var(--golem-color-primary-500);
+  outline-offset: 2px;
+  border-radius: var(--golem-radius-sm);
+}

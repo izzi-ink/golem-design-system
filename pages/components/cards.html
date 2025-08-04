@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards - Golem Design System</title>
+    
+    <!-- Design System CSS -->
+    <link rel="stylesheet" href="../../css/golem-tokens.css">
+    <link rel="stylesheet" href="../../css/golem-foundation.css">
+    <link rel="stylesheet" href="../../css/golem-components.css">
+    <link rel="stylesheet" href="../../css/site.css">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="golem-container golem-py-8">
+        <div class="golem-flex golem-items-center golem-justify-between">
+            <a href="../../index.html" class="golem-text-headline-medium" style="text-decoration: none; color: var(--golem-color-text-primary);">
+                <strong>Golem</strong> <span class="golem-badge golem-badge--primary golem-badge--sm">v0.1</span>
+            </a>
+            <div class="golem-flex golem-gap-6">
+                <a href="../getting-started.html" style="color: var(--golem-color-text-secondary); text-decoration: none;">Getting Started</a>
+                <a href="../design-tokens/colors.html" style="color: var(--golem-color-text-secondary); text-decoration: none;">Design Tokens</a>
+                <a href="cards.html" style="color: var(--golem-color-primary-600); text-decoration: none;">Components</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="golem-container">
+        <div class="golem-grid golem-grid-cols-1 golem-grid-cols-lg-4 golem-gap-8">
+            
+            <!-- Sidebar -->
+            <aside>
+                <div class="golem-card">
+                    <div class="golem-card__body">
+                        <h3 class="golem-text-headline-small golem-mb-4">Components</h3>
+                        <nav class="golem-flex golem-flex-col golem-gap-2">
+                            <a href="buttons.html" style="color: var(--golem-color-text-secondary); text-decoration: none; padding: var(--golem-space-2); border-radius: var(--golem-radius-base);">Buttons</a>
+                            <a href="cards.html" style="color: var(--golem-color-primary-600); text-decoration: none; padding: var(--golem-space-2); border-radius: var(--golem-radius-base); background-color: var(--golem-color-primary-50);">Cards</a>
+                            <a href="badges.html" style="color: var(--golem-color-text-secondary); text-decoration: none; padding: var(--golem-space-2); border-radius: var(--golem-radius-base);">Badges</a>
+                        </nav>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <div class="golem-col-span-3">
+                <header class="golem-mb-8">
+                    <h1 class="golem-text-display-large">Cards</h1>
+                    <p class="golem-text-body-large" style="color: var(--golem-color-text-secondary);">
+                        Flexible container components for grouping related content. Built with semantic structure for AI compatibility.
+                    </p>
+                </header>
+
+                <!-- Basic Card Section -->
+                <section class="golem-mb-12">
+                    <h2 class="golem-text-display-medium golem-mb-6">Basic Card</h2>
+                    
+                    <div class="golem-card golem-mb-6">
+                        <div class="golem-card__header">
+                            <h3 class="golem-card__title">Simple Content Container</h3>
+                            <p class="golem-card__subtitle">Foundation card with basic styling</p>
+                        </div>
+                        <div class="golem-card__body">
+                            <!-- Live Example -->
+                            <div class="golem-mb-4" style="padding: var(--golem-space-6); background-color: var(--golem-color-surface-raised); border: 1px solid var(--golem-color-border-base); border-radius: var(--golem-radius-base);">
+                                <div class="golem-card" style="max-width: 300px;">
+                                    <div class="golem-card__body">
+                                        <h4 class="golem-card__title">Card Title</h4>
+                                        <p class="golem-card__subtitle">This is a simple card with just a body section. Perfect for basic content grouping.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Code -->
+                            <div style="background-color: var(--golem-color-surface-raised); padding: var(--golem-space-4); border-radius: var(--golem-radius-base); font-family: var(--golem-font-mono); font-size: var(--golem-text-sm);">
+                                <code>&lt;div class="golem-card"&gt;
+  &lt;div class="golem-card__body"&gt;
+    &lt;h3 class="golem-card__title"&gt;Card Title&lt;/h3&gt;
+    &lt;p class="golem-card__subtitle"&gt;Card description text.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Card with Header Section -->
+                <section class="golem-mb-12">
+                    <h2 class="golem-text-display-medium golem-mb-6">Card with Header</h2>
+                    
+                    <div class="golem-card golem-mb-6">
+                        <div class="golem-card__header">
+                            <h3 class="golem-card__title">Structured Content Card</h3>
+                            <p class="golem-card__subtitle">Card with dedicated header section</p>
+                        </div>
+                        <div class="golem-card__body">
+                            <!-- Live Example -->
+                            <div class="golem-mb-4" style="padding: var(--golem-space-6); background-color: var(--golem-color-surface-raised); border: 1px solid var(--golem-color-border-base); border-radius: var(--golem-radius-base);">
+                                <div class="golem-card" style="max-width: 350px;">
+                                    <div class="golem-card__header">
+                                        <h4 class="golem-card__title">Feature Announcement</h4>
+                                        <p class="golem-card__subtitle">New in version 2.0</p>
+                                    </div>
+                                    <div class="golem-card__body">
+                                        <p style="margin: 0;">We've added new AI-compatible components that make it easier to build consistent interfaces with automated tools.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Code -->
+                            <div style="background-color: var(--golem-color-surface-raised); padding: var(--golem-space-4); border-radius: var(--golem-radius-base); font-family: var(--golem-font-mono); font-size: var(--golem-text-sm);">
+                                <code>&lt;div class="golem-card"&gt;
+  &lt;div class="golem-card__header"&gt;
+    &lt;h3 class="golem-card__title"&gt;Feature Announcement&lt;/h3&gt;
+    &lt;p class="golem-card__subtitle"&gt;New in version 2.0&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="golem-card__body"&gt;
+    &lt;p&gt;Card content goes here...&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Complete Card Section -->
+                <section class="golem-mb-12">
+                    <h2 class="golem-text-display-medium golem-mb-6">Complete Card</h2>
+                    
+                    <div class="golem-card golem-mb-6">
+                        <div class="golem-card__header">
+                            <h3 class="golem-card__title">Full Structure Card</h3>
+                            <p class="golem-card__subtitle">Card with header, body, and footer sections</p>
+                        </div>
+                        <div class="golem-card__body">
+                            <!-- Live Example -->
+                            <div class="golem-mb-4" style="padding: var(--golem-space-6); background-color: var(--golem-color-surface-raised); border: 1px solid var(--golem-color-border-base); border-radius: var(--golem-radius-base);">
+                                <div class="golem-card" style="max-width: 350px;">
+                                    <div class="golem-card__header">
+                                        <h4 class="golem-card__title">Getting Started Guide</h4>
+                                        <p class="golem-card__subtitle">5 min read</p>
+                                    </div>
+                                    <div class="golem-card__body">
+                                        <p style="margin: 0;">Learn how to integrate Golem Design System into your project with this comprehensive guide covering installation, setup, and best practices.</p>
+                                    </div>
+                                    <div class="golem-card__footer">
+                                        <div class="golem-flex golem-gap-3">
+                                            <button class="golem-btn golem-btn--primary">Read Guide</button>
+                                            <button class="golem-btn golem-btn--secondary">Save for Later</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Code -->
+                            <div style="background-color: var(--golem-color-surface-raised); padding: var(--golem-space-4); border-radius: var(--golem-radius-base); font-family: var(--golem-font-mono); font-size: var(--golem-text-sm);">
+                                <code>&lt;div class="golem-card"&gt;
+  &lt;div class="golem-card__header"&gt;
+    &lt;h3 class="golem-card__title"&gt;Getting Started Guide&lt;/h3&gt;
+    &lt;p class="golem-card__subtitle"&gt;5 min read&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="golem-card__body"&gt;
+    &lt;p&gt;Guide description...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="golem-card__footer"&gt;
+    &lt;button class="golem-btn golem-btn--primary"&gt;Read Guide&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- AI Integration Section -->
+                <section class="golem-mb-12">
+                    <h2 class="golem-text-display-medium golem-mb-6">AI Integration</h2>
+                    
+                    <div class="golem-card" style="background: linear-gradient(135deg, var(--golem-color-primary-50) 0%, var(--golem-color-primary-100) 100%); border-color: var(--golem-color-primary-200);">
+                        <div class="golem-card__body">
+                            <div style="display: flex; align-items: center; gap: var(--golem-space-3); margin-bottom: var(--golem-space-4);">
+                                <span style="font-size: 2rem;">🤖</span>
+                                <h3 class="golem-card__title golem-mb-0" style="color: var(--golem-color-primary-700);">Semantic Card Structure</h3>
+                            </div>
+                            
+                            <p style="color: var(--golem-color-primary-700); margin-bottom: var(--golem-space-4);">
+                                Golem cards use semantic section names that AI can understand and generate consistently:
+                            </p>
+                            
+                            <div class="golem-grid golem-grid-cols-1 golem-grid-cols-lg-2 golem-gap-6">
+                                <!-- AI Benefits -->
+                                <div>
+                                    <h4 style="color: var(--golem-color-primary-700); margin-bottom: var(--golem-space-3);">✅ AI Benefits</h4>
+                                    <ul style="list-style: none; padding: 0; color: var(--golem-color-primary-700);">
+                                        <li class="golem-mb-2">• <strong>__header</strong> - AI knows this is the title area</li>
+                                        <li class="golem-mb-2">• <strong>__body</strong> - AI knows this is main content</li>
+                                        <li class="golem-mb-2">• <strong>__footer</strong> - AI knows this is for actions</li>
+                                        <li class="golem-mb-2">• <strong>__title</strong> - AI can identify headings</li>
+                                        <li class="golem-mb-2">• <strong>__subtitle</strong> - AI knows supporting text</li>
+                                    </ul>
+                                </div>
+
+                                <!-- Prompt Example -->
+                                <div style="background-color: var(--golem-color-surface-base); border: 1px solid var(--golem-color-border-base); border-radius: var(--golem-radius-base); padding: var(--golem-space-4);">
+                                    <h4 style="margin-bottom: var(--golem-space-2); color: var(--golem-color-text-primary);">💬 AI Prompt</h4>
+                                    <p style="font-style: italic; margin-bottom: var(--golem-space-3); color: var(--golem-color-text-secondary); font-size: var(--golem-text-sm);">
+                                        "Create a feature card with header, body, and action footer using Golem components"
+                                    </p>
+                                    <h4 style="margin-bottom: var(--golem-space-2); color: var(--golem-color-text-primary);">🎯 AI Output</h4>
+                                    <div style="background-color: var(--golem-color-surface-raised); padding: var(--golem-space-3); border-radius: var(--golem-radius-base); font-family: var(--golem-font-mono); font-size: var(--golem-text-xs);">
+                                        <code>&lt;div class="golem-card"&gt;
+  &lt;div class="golem-card__header"&gt;
+    &lt;h3 class="golem-card__title"&gt;Feature&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class="golem-card__body"&gt;
+    &lt;p&gt;Description...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="golem-card__footer"&gt;
+    &lt;button class="golem-btn golem-btn--primary"&gt;Learn More&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Component API -->
+                <section class="golem-mb-12">
+                    <h2 class="golem-text-display-medium golem-mb-6">Component API</h2>
+                    
+                    <div class="golem-card">
+                        <div class="golem-card__header">
+                            <h3 class="golem-card__title">CSS Classes</h3>
+                            <p class="golem-card__subtitle">Available classes for card components</p>
+                        </div>
+                        <div class="golem-card__body">
+                            <table style="width: 100%; border-collapse: collapse;">
+                                <thead>
+                                    <tr style="border-bottom: 1px solid var(--golem-color-border-base);">
+                                        <th style="text-align: left; padding: var(--golem-space-3); font-weight: var(--golem-font-semibold);">Class</th>
+                                        <th style="text-align: left; padding: var(--golem-space-3); font-weight: var(--golem-font-semibold);">Description</th>
+                                        <th style="text-align: left; padding: var(--golem-space-3); font-weight: var(--golem-font-semibold);">Usage</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="border-bottom: 1px solid var(--golem-color-border-base);">
+                                        <td style="padding: var(--golem-space-3); font-family: var(--golem-font-mono); font-size: var(--golem-text-sm); background-color: var(--golem-color-surface-raised);">.golem-card</td>
+                                        <td style="padding: var(--golem-space-3);">Base card container</td>
+                                        <td style="padding: var(--golem-space-3);">Required on all cards</td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid var(--golem-color-border-base);">
+                                        <td style="padding: var(--golem-space-3); font-family: var(--golem-font-mono); font-size: var(--golem-text-sm); background-color: var(--golem-color-surface-raised);">.golem-card--raised</td>
+                                        <td style="padding: var(--golem-space-3);">Enhanced shadow variant</td>
+                                        <td style="padding: var(--golem-space-3);">For emphasis or importance</td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid var(--golem-color-border-base);">
+                                        <td style="padding: var(--golem-space-3); font-family: var(--golem-font-mono); font-size: var(--golem-text-sm); background-color: var(--golem-color-surface-raised);">.golem-card__header</td>
+                                        <td style="padding: var(--golem-space-3);">Card header section</td>
+                                        <td style="padding: var(--golem-space-3);">For titles and metadata</td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid var(--golem-color-border-base);">
+                                        <td style="padding: var(--golem-space-3); font-family: var(--golem-font-mono); font-size: var(--golem-text-sm); background-color: var(--golem-color-surface-raised);">.golem-card__body</td>
+                                        <td style="padding: var(--golem-space-3);">Card main content area</td>
+                                        <td style="padding: var(--golem-space-3);">Primary content container</td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid var(--golem-color-border-base);">
+                                        <td style="padding: var(--golem-space-3); font-family: var(--golem-font-mono); font-size: var(--golem-text-sm); background-color: var(--golem-color-surface-raised);">.golem-card__footer</td>
+                                        <td style="padding: var(--golem-space-3);">Card footer section</td>
+                                        <td style="padding: var(--golem-space-3);">For actions and buttons</td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid var(--golem-color-border-base);">
+                                        <td style="padding: var(--golem-space-3); font-family: var(--golem-font-mono); font-size: var(--golem-text-sm); background-color: var(--golem-color-surface-raised);">.golem-card__title</td>
+                                        <td style="padding: var(--golem-space-3);">Card title styling</td>
+                                        <td style="padding: var(--golem-space-3);">Main heading in header or body</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: var(--golem-space-3); font-family: var(--golem-font-mono); font-size: var(--golem-text-sm); background-color: var(--golem-color-surface-raised);">.golem-card__subtitle</td>
+                                        <td style="padding: var(--golem-space-3);">Card subtitle styling</td>
+                                        <td style="padding: var(--golem-space-3);">Supporting text or description</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Next Steps -->
+                <section class="golem-mb-12">
+                    <div class="golem-card golem-card--raised">
+                        <div class="golem-card__body text-center">
+                            <h2 class="golem-text-headline-medium golem-mb-4">Explore More Components</h2>
+                            <p class="golem-mb-6">Continue building with Golem's AI-compatible component library.</p>
+                            <div class="golem-flex golem-justify-center golem-gap-4">
+                                <a href="badges.html" class="golem-btn golem-btn--primary">Badges →</a>
+                                <a href="buttons.html" class="golem-btn golem-btn--secondary">← Buttons</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="golem-container golem-py-8" style="border-top: 1px solid var(--golem-color-border-base); margin-top: var(--golem-space-16);">
+        <div class="golem-flex golem-items-center golem-justify-between">
+            <p style="color: var(--golem-color-text-tertiary); margin: 0;">© 2025 Golem Design System</p>
+            <a href="../../index.html" style="color: var(--golem-color-text-secondary); text-decoration: none;">← Back to Home</a>
+        </div>
+    </footer>
+</body>
+</html>

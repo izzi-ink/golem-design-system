@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons - Golem Design System</title>
+    
+    <!-- Design System CSS -->
+    <link rel="stylesheet" href="../../css/golem-tokens.css">
+    <link rel="stylesheet" href="../../css/golem-foundation.css">
+    <link rel="stylesheet" href="../../css/golem-components.css">
+    <link rel="stylesheet" href="../../css/site.css">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="golem-container golem-py-8">
+        <div class="golem-flex golem-items-center golem-justify-between">
+            <a href="../../index.html" class="golem-text-headline-medium" style="text-decoration: none; color: var(--golem-color-text-primary);">
+                <strong>Golem</strong> <span class="golem-badge golem-badge--primary golem-badge--sm">v0.1</span>
+            </a>
+            <div class="golem-flex golem-gap-6">
+                <a href="../getting-started.html" style="color: var(--golem-color-text-secondary); text-decoration: none;">Getting Started</a>
+                <a href="../design-tokens/colors.html" style="color: var(--golem-color-text-secondary); text-decoration: none;">Design Tokens</a>
+                <a href="buttons.html" style="color: var(--golem-color-primary-600); text-decoration: none;">Components</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="golem-container">
+        <div class="golem-grid golem-grid-cols-1 golem-grid-cols-lg-4 golem-gap-8">
+            
+            <!-- Sidebar -->
+            <aside>
+                <div class="golem-card">
+                    <div class="golem-card__body">
+                        <h3 class="golem-text-headline-small golem-mb-4">Components</h3>
+                        <nav class="golem-flex golem-flex-col golem-gap-2">
+                            <a href="buttons.html" style="color: var(--golem-color-primary-600); text-decoration: none; padding: var(--golem-space-2); border-radius: var(--golem-radius-base); background-color: var(--golem-color-primary-50);">Buttons</a>
+                            <a href="cards.html" style="color: var(--golem-color-text-secondary); text-decoration: none; padding: var(--golem-space-2); border-radius: var(--golem-radius-base);">Cards</a>
+                            <a href="badges.html" style="color: var(--golem-color-text-secondary); text-decoration: none; padding: var(--golem-space-2); border-radius: var(--golem-radius-base);">Badges</a>
+                        </nav>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <div class="golem-col-span-3">
+                <header class="golem-mb-8">
+                    <h1 class="golem-text-display-large">Buttons</h1>
+                    <p class="golem-text-body-large" style="color: var(--golem-color-text-secondary);">
+                        Primary interaction elements for user actions. Built with semantic naming for AI compatibility.
+                    </p>
+                </header>
+
+                <!-- Primary Button Section -->
+                <section class="golem-mb-12">
+                    <h2 class="golem-text-display-medium golem-mb-6">Primary Button</h2>
+                    
+                    <div class="golem-card golem-mb-6">
+                        <div class="golem-card__header">
+                            <h3 class="golem-card__title">Main Call-to-Action</h3>
+                            <p class="golem-card__subtitle">Use for the most important action on a page</p>
+                        </div>
+                        <div class="golem-card__body">
+                            <!-- Live Example -->
+                            <div class="golem-mb-4" style="padding: var(--golem-space-6); background-color: var(--golem-color-surface-base); border: 1px solid var(--golem-color-border-base); border-radius: var(--golem-radius-base); text-align: center;">
+                                <button class="golem-btn golem-btn--primary">Get Started</button>
+                            </div>
+                            
+                            <!-- Code -->
+                            <div style="background-color: var(--golem-color-surface-raised); padding: var(--golem-space-4); border-radius: var(--golem-radius-base); font-family: var(--golem-font-mono); font-size: var(--golem-text-sm);">
+                                <code>&lt;button class="golem-btn golem-btn--primary"&gt;
+  Get Started
+&lt;/button&gt;</code>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Secondary Button Section -->
+                <section class="golem-mb-12">
+                    <h2 class="golem-text-display-medium golem-mb-6">Secondary Button</h2>
+                    
+                    <div class="golem-card golem-mb-6">
+                        <div class="golem-card__header">
+                            <h3 class="golem-card__title">Supporting Actions</h3>
+                            <p class="golem-card__subtitle">Use for secondary actions that support the primary flow</p>
+                        </div>
+                        <div class="golem-card__body">
+                            <!-- Live Example -->
+                            <div class="golem-mb-4" style="padding: var(--golem-space-6); background-color: var(--golem-color-surface-base); border: 1px solid var(--golem-color-border-base); border-radius: var(--golem-radius-base); text-align: center;">
+                                <button class="golem-btn golem-btn--secondary">Learn More</button>
+                            </div>
+                            
+                            <!-- Code -->
+                            <div style="background-color: var(--golem-color-surface-raised); padding: var(--golem-space-4); border-radius: var(--golem-radius-base); font-family: var(--golem-font-mono); font-size: var(--golem-text-sm);">
+                                <code>&lt;button class="golem-btn golem-btn--secondary"&gt;
+  Learn More
+&lt;/button&gt;</code>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Button Combinations Section -->
+                <section class="golem-mb-12">
+                    <h2 class="golem-text-display-medium golem-mb-6">Button Combinations</h2>
+                    
+                    <div class="golem-card">
+                        <div class="golem-card__header">
+                            <h3 class="golem-card__title">Primary + Secondary Pattern</h3>
+                            <p class="golem-card__subtitle">Common pattern for forms and action panels</p>
+                        </div>
+                        <div class="golem-card__body">
+                            <!-- Live Example -->
+                            <div class="golem-mb-4" style="padding: var(--golem-space-6); background-color: var(--golem-color-surface-base); border: 1px solid var(--golem-color-border-base); border-radius: var(--golem-radius-base);">
+                                <div class="golem-flex golem-gap-4 golem-justify-center">
+                                    <button class="golem-btn golem-btn--primary">Save Changes</button>
+                                    <button class="golem-btn golem-btn--secondary">Cancel</button>
+                                </div>
+                            </div>
+                            
+                            <!-- Code -->
+                            <div style="background-color: var(--golem-color-surface-raised); padding: var(--golem-space-4); border-radius: var(--golem-radius-base); font-family: var(--golem-font-mono); font-size: var(--golem-text-sm);">
+                                <code>&lt;div class="golem-flex golem-gap-4"&gt;
+  &lt;button class="golem-btn golem-btn--primary"&gt;Save Changes&lt;/button&gt;
+  &lt;button class="golem-btn golem-btn--secondary"&gt;Cancel&lt;/button&gt;
+&lt;/div&gt;</code>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- All Button States Section -->
+                <section class="golem-mb-12">
+                    <h2 class="golem-text-display-medium golem-mb-6">All Button Variants</h2>
+                    
+                    <div class="golem-card">
+                        <div class="golem-card__header">
+                            <h3 class="golem-card__title">Complete Button Set</h3>
+                            <p class="golem-card__subtitle">All available button styles in Golem</p>
+                        </div>
+                        <div class="golem-card__body">
+                            <!-- Live Example -->
+                            <div class="golem-mb-4" style="padding: var(--golem-space-6); background-color: var(--golem-color-surface-base); border: 1px solid var(--golem-color-border-base); border-radius: var(--golem-radius-base);">
+                                <div class="golem-grid golem-grid-cols-1 golem-grid-cols-lg-2 golem-gap-6">
+                                    <div>
+                                        <h4 class="golem-mb-3">Primary Variants</h4>
+                                        <div class="golem-flex golem-flex-col golem-gap-3">
+                                            <button class="golem-btn golem-btn--primary">Primary Button</button>
+                                            <button class="golem-btn golem-btn--secondary">Secondary Button</button>
+                                        </div>
+                                    </div>
+                                    
+                                    <div>
+                                        <h4 class="golem-mb-3">With Badges</h4>
+                                        <div class="golem-flex golem-flex-col golem-gap-3">
+                                            <button class="golem-btn golem-btn--primary">
+                                                Get Started 
+                                                <span class="golem-badge golem-badge--primary golem-badge--sm" style="margin-left: var(--golem-space-2);">New</span>
+                                            </button>
+                                            <button class="golem-btn golem-btn--secondary">
+                                                Documentation
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Code -->
+                            <div style="background-color: var(--golem-color-surface-raised); padding: var(--golem-space-4); border-radius: var(--golem-radius-base); font-family: var(--golem-font-mono); font-size: var(--golem-text-sm);">
+                                <code>&lt;!-- Primary variants --&gt;
+&lt;button class="golem-btn golem-btn--primary"&gt;Primary Button&lt;/button&gt;
+&lt;button class="golem-btn golem-btn--secondary"&gt;Secondary Button&lt;/button&gt;
+
+&lt;!-- With badges --&gt;
+&lt;button class="golem-btn golem-btn--primary"&gt;
+  Get Started &lt;span class="golem-badge golem-badge--primary golem-badge--sm"&gt;New&lt;/span&gt;
+&lt;/button&gt;</code>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- AI Integration Section -->
+                <section class="golem-mb-12">
+                    <h2 class="golem-text-display-medium golem-mb-6">AI Integration</h2>
+                    
+                    <div class="golem-card" style="background: linear-gradient(135deg, var(--golem-color-primary-50) 0%, var(--golem-color-primary-100) 100%); border-color: var(--golem-color-primary-200);">
+                        <div class="golem-card__body">
+                            <div style="display: flex; align-items: center; gap: var(--golem-space-3); margin-bottom: var(--golem-space-4);">
+                                <span style="font-size: 2rem;">🤖</span>
+                                <h3 class="golem-card__title golem-mb-0" style="color: var(--golem-color-primary-700);">AI Prompt Examples</h3>
+                            </div>
+                            
+                            <p style="color: var(--golem-color-primary-700); margin-bottom: var(--golem-space-4);">
+                                When working with AI tools, use semantic class names that describe the button's purpose:
+                            </p>
+                            
+                            <div class="golem-grid golem-grid-cols-1 golem-gap-4">
+                                <!-- Prompt Example 1 -->
+                                <div style="background-color: var(--golem-color-surface-base); border: 1px solid var(--golem-color-border-base); border-radius: var(--golem-radius-base); padding: var(--golem-space-4);">
+                                    <h4 style="margin-bottom: var(--golem-space-2); color: var(--golem-color-text-primary);">💬 AI Prompt</h4>
+                                    <p style="font-style: italic; margin-bottom: var(--golem-space-3); color: var(--golem-color-text-secondary);">
+                                        "Create a primary call-to-action button using golem-btn golem-btn--primary classes"
+                                    </p>
+                                    <h4 style="margin-bottom: var(--golem-space-2); color: var(--golem-color-text-primary);">🎯 AI Output</h4>
+                                    <div style="background-color: var(--golem-color-surface-raised); padding: var(--golem-space-3); border-radius: var(--golem-radius-base); font-family: var(--golem-font-mono); font-size: var(--golem-text-sm);">
+                                        <code>&lt;button class="golem-btn golem-btn--primary"&gt;Get Started&lt;/button&gt;</code>
+                                    </div>
+                                </div>
+
+                                <!-- Prompt Example 2 -->
+                                <div style="background-color: var(--golem-color-surface-base); border: 1px solid var(--golem-color-border-base); border-radius: var(--golem-radius-base); padding: var(--golem-space-4);">
+                                    <h4 style="margin-bottom: var(--golem-space-2); color: var(--golem-color-text-primary);">💬 AI Prompt</h4>
+                                    <p style="font-style: italic; margin-bottom: var(--golem-space-3); color: var(--golem-color-text-secondary);">
+                                        "Create a form with primary and secondary buttons using Golem components"
+                                    </p>
+                                    <h4 style="margin-bottom: var(--golem-space-2); color: var(--golem-color-text-primary);">🎯 AI Output</h4>
+                                    <div style="background-color: var(--golem-color-surface-raised); padding: var(--golem-space-3); border-radius: var(--golem-radius-base); font-family: var(--golem-font-mono); font-size: var(--golem-text-sm);">
+                                        <code>&lt;div class="golem-flex golem-gap-4"&gt;
+  &lt;button class="golem-btn golem-btn--primary"&gt;Submit&lt;/button&gt;
+  &lt;button class="golem-btn golem-btn--secondary"&gt;Cancel&lt;/button&gt;
+&lt;/div&gt;</code>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Usage Guidelines -->
+                <section class="golem-mb-12">
+                    <h2 class="golem-text-display-medium golem-mb-6">Usage Guidelines</h2>
+                    
+                    <div class="golem-grid golem-grid-cols-1 golem-grid-cols-lg-2 golem-gap-6">
+                        <!-- Do Example -->
+                        <div style="background-color: var(--golem-color-success-light, #ecfdf5); border: 2px solid var(--golem-color-success-base, #10b981); border-radius: var(--golem-radius-lg); padding: var(--golem-space-4);">
+                            <h4 style="color: var(--golem-color-success-strong, #047857); margin-bottom: var(--golem-space-3);">✅ Do</h4>
+                            <ul style="color: var(--golem-color-success-strong, #047857); list-style: none; padding: 0;">
+                                <li class="golem-mb-2">• Use primary for main actions</li>
+                                <li class="golem-mb-2">• Use secondary for supporting actions</li>
+                                <li class="golem-mb-2">• Keep button text concise and action-oriented</li>
+                                <li class="golem-mb-2">• Use semantic class names for AI compatibility</li>
+                            </ul>
+                        </div>
+
+                        <!-- Don't Example -->
+                        <div style="background-color: var(--golem-color-error-light, #fef2f2); border: 2px solid var(--golem-color-error-base, #ef4444); border-radius: var(--golem-radius-lg); padding: var(--golem-space-4);">
+                            <h4 style="color: var(--golem-color-error-strong, #b91c1c); margin-bottom: var(--golem-space-3);">❌ Don't</h4>
+                            <ul style="color: var(--golem-color-error-strong, #b91c1c); list-style: none; padding: 0;">
+                                <li class="golem-mb-2">• Use multiple primary buttons on one page</li>
+                                <li class="golem-mb-2">• Create custom button styles outside the system</li>
+                                <li class="golem-mb-2">• Use vague button text like "Click here"</li>
+                                <li class="golem-mb-2">• Override semantic class names with custom CSS</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Component API -->
+                <section class="golem-mb-12">
+                    <h2 class="golem-text-display-medium golem-mb-6">Component API</h2>
+                    
+                    <div class="golem-card">
+                        <div class="golem-card__header">
+                            <h3 class="golem-card__title">CSS Classes</h3>
+                            <p class="golem-card__subtitle">Available classes for button components</p>
+                        </div>
+                        <div class="golem-card__body">
+                            <table style="width: 100%; border-collapse: collapse;">
+                                <thead>
+                                    <tr style="border-bottom: 1px solid var(--golem-color-border-base);">
+                                        <th style="text-align: left; padding: var(--golem-space-3); font-weight: var(--golem-font-semibold);">Class</th>
+                                        <th style="text-align: left; padding: var(--golem-space-3); font-weight: var(--golem-font-semibold);">Description</th>
+                                        <th style="text-align: left; padding: var(--golem-space-3); font-weight: var(--golem-font-semibold);">Usage</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="border-bottom: 1px solid var(--golem-color-border-base);">
+                                        <td style="padding: var(--golem-space-3); font-family: var(--golem-font-mono); font-size: var(--golem-text-sm); background-color: var(--golem-color-surface-raised);">.golem-btn</td>
+                                        <td style="padding: var(--golem-space-3);">Base button styles</td>
+                                        <td style="padding: var(--golem-space-3);">Required on all buttons</td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid var(--golem-color-border-base);">
+                                        <td style="padding: var(--golem-space-3); font-family: var(--golem-font-mono); font-size: var(--golem-text-sm); background-color: var(--golem-color-surface-raised);">.golem-btn--primary</td>
+                                        <td style="padding: var(--golem-space-3);">Primary button variant</td>
+                                        <td style="padding: var(--golem-space-3);">Main call-to-action</td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid var(--golem-color-border-base);">
+                                        <td style="padding: var(--golem-space-3); font-family: var(--golem-font-mono); font-size: var(--golem-text-sm); background-color: var(--golem-color-surface-raised);">.golem-btn--secondary</td>
+                                        <td style="padding: var(--golem-space-3);">Secondary button variant</td>
+                                        <td style="padding: var(--golem-space-3);">Supporting actions</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Next Steps -->
+                <section class="golem-mb-12">
+                    <div class="golem-card golem-card--raised">
+                        <div class="golem-card__body text-center">
+                            <h2 class="golem-text-headline-medium golem-mb-4">Explore More Components</h2>
+                            <p class="golem-mb-6">Continue building with Golem's AI-compatible component library.</p>
+                            <div class="golem-flex golem-justify-center golem-gap-4">
+                                <a href="cards.html" class="golem-btn golem-btn--primary">Cards →</a>
+                                <a href="badges.html" class="golem-btn golem-btn--secondary">Badges</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="golem-container golem-py-8" style="border-top: 1px solid var(--golem-color-border-base); margin-top: var(--golem-space-16);">
+        <div class="golem-flex golem-items-center golem-justify-between">
+            <p style="color: var(--golem-color-text-tertiary); margin: 0;">© 2025 Golem Design System</p>
+            <a href="../../index.html" style="color: var(--golem-color-text-secondary); text-decoration: none;">← Back to Home</a>
+        </div>
+    </footer>
+</body>
+</html>

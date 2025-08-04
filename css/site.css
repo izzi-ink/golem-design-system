@@ -1,0 +1,700 @@
+/**
+ * site.css
+ * Site-specific styles for Golem Design System documentation
+ */
+
+/* ===================================================================
+   CUSTOM FONT INTEGRATION
+   ================================================================ */
+
+:root {
+  /* Update font family with Inter */
+  --golem-font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 
+                      'Helvetica Neue', Arial, sans-serif;
+}
+
+/* ===================================================================
+   SITE LAYOUT COMPONENTS
+   ================================================================ */
+
+/* Navigation Bar */
+.golem-navbar {
+  background-color: var(--golem-color-surface-base);
+  border-bottom: 1px solid var(--golem-color-border-base);
+  padding: var(--golem-space-4) 0;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(8px);
+  background-color: color-mix(in srgb, var(--golem-color-surface-base) 95%, transparent);
+}
+
+.golem-navbar__brand {
+  text-decoration: none;
+  color: var(--golem-color-text-primary);
+  font-weight: var(--golem-font-bold);
+  transition: color var(--golem-duration-base) var(--golem-easing-ease-out);
+}
+
+.golem-navbar__brand:hover {
+  color: var(--golem-color-primary-600);
+}
+
+.golem-navbar__nav {
+  display: flex;
+  align-items: center;
+  gap: var(--golem-space-6);
+}
+
+.golem-navbar__link {
+  color: var(--golem-color-text-secondary);
+  text-decoration: none;
+  font-weight: var(--golem-font-medium);
+  padding: var(--golem-space-2) var(--golem-space-3);
+  border-radius: var(--golem-radius-base);
+  transition: all var(--golem-duration-base) var(--golem-easing-ease-out);
+}
+
+.golem-navbar__link:hover {
+  color: var(--golem-color-text-primary);
+  background-color: var(--golem-color-surface-raised);
+}
+
+.golem-navbar__link[aria-current="page"] {
+  color: var(--golem-color-primary-600);
+  background-color: var(--golem-color-primary-50);
+}
+
+/* Mobile Navigation */
+.golem-navbar__mobile-toggle {
+  display: none;
+}
+
+.golem-navbar__mobile-menu {
+  display: none;
+  background-color: var(--golem-color-surface-base);
+  border-top: 1px solid var(--golem-color-border-base);
+  margin-top: var(--golem-space-4);
+}
+
+.golem-navbar__mobile-menu.is-open {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .golem-navbar__nav {
+    display: none;
+  }
+  
+  .golem-navbar__mobile-toggle {
+    display: flex;
+  }
+}
+
+/* ===================================================================
+   HERO SECTION - Updated for Logo Design
+   ================================================================ */
+
+/* ===================================================================
+   HERO SECTION - Updated for New Color Scheme
+   ================================================================ */
+
+.golem-hero {
+  background: linear-gradient(135deg, var(--golem-color-primary-500) 0%, var(--golem-color-primary-600) 100%);
+  color: var(--golem-color-text-inverse);
+  padding: var(--golem-space-20) 0;
+  position: relative;
+  overflow: hidden;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+.golem-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+  opacity: 0.3;
+}
+
+.golem-hero > .golem-container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Logo Styling */
+.golem-hero__logo {
+  max-width: 500px;
+  width: 100%;
+  margin-bottom: var(--golem-space-6);
+}
+
+.golem-hero__logo-image {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+  transition: transform var(--golem-duration-slow) var(--golem-easing-ease-out);
+}
+
+.golem-hero__logo-image:hover {
+  transform: scale(1.02);
+}
+
+/* Updated Subtitle Styling */
+.golem-hero__subtitle {
+  color: var(--golem-color-text-inverse);
+  font-weight: var(--golem-font-medium);
+  max-width: 600px;
+  margin: 0 auto var(--golem-space-6);
+  opacity: 0.9;
+}
+
+.golem-hero__description {
+  color: var(--golem-color-text-inverse);
+  opacity: 0.8;
+  max-width: 700px;
+  margin: var(--golem-space-4) auto 0;
+}
+
+/* CTA Button Container */
+.golem-hero__cta {
+  margin-top: var(--golem-space-4);
+}
+
+.golem-hero__cta .golem-btn {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all var(--golem-duration-base) var(--golem-easing-ease-out);
+}
+
+.golem-hero__cta .golem-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design for Hero */
+@media (max-width: 768px) {
+  .golem-hero {
+    min-height: 50vh;
+    padding: var(--golem-space-16) 0;
+  }
+  
+  .golem-hero__logo {
+    margin-bottom: var(--golem-space-4);
+  }
+  
+  .golem-hero__logo-image {
+    max-width: 300px;
+  }
+  
+  .golem-hero__subtitle {
+    font-size: var(--golem-text-body-medium);
+    margin-bottom: var(--golem-space-4);
+  }
+  
+  .golem-hero__cta .golem-btn--lg {
+    padding: var(--golem-space-3) var(--golem-space-6);
+    font-size: var(--golem-text-body-medium);
+  }
+}
+
+@media (max-width: 480px) {
+  .golem-hero {
+    padding: var(--golem-space-12) 0;
+  }
+  
+  .golem-hero__logo-image {
+    max-width: 250px;
+  }
+  
+  .golem-hero__subtitle {
+    font-size: var(--golem-text-body-small);
+  }
+  
+  .golem-hero__cta .golem-btn {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+/* Animation for logo entrance */
+@keyframes logoFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.golem-hero__logo-image {
+  animation: logoFadeIn 0.8s var(--golem-easing-ease-out) 0.2s both;
+}
+
+.golem-hero__subtitle {
+  animation: logoFadeIn 0.8s var(--golem-easing-ease-out) 0.4s both;
+}
+
+.golem-hero__cta {
+  animation: logoFadeIn 0.8s var(--golem-easing-ease-out) 0.6s both;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .golem-hero__logo-image,
+  .golem-hero__subtitle,
+  .golem-hero__cta {
+    animation: none;
+  }
+  
+  .golem-hero__logo-image:hover {
+    transform: none;
+  }
+  
+  .golem-hero__cta .golem-btn:hover {
+    transform: none;
+  }
+}
+
+/* ===================================================================
+   FOOTER
+   ================================================================ */
+
+.golem-footer {
+  background-color: var(--golem-color-gray-900);
+  color: var(--golem-color-gray-300);
+  padding: var(--golem-space-16) 0 var(--golem-space-8);
+  margin-top: var(--golem-space-20);
+}
+
+.golem-footer h3 {
+  color: var(--golem-color-white);
+  font-weight: var(--golem-font-semibold);
+}
+
+.golem-footer__link {
+  color: var(--golem-color-gray-400);
+  text-decoration: none;
+  transition: color var(--golem-duration-base) var(--golem-easing-ease-out);
+}
+
+.golem-footer__link:hover {
+  color: var(--golem-color-white);
+}
+
+.golem-border-t {
+  border-top: 1px solid var(--golem-color-gray-700);
+}
+
+/* ===================================================================
+   DOCUMENTATION LAYOUT
+   ================================================================ */
+
+/* Page Layout */
+.golem-page-layout {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: var(--golem-space-8);
+  min-height: calc(100vh - 200px);
+}
+
+.golem-sidebar {
+  background-color: var(--golem-color-surface-raised);
+  padding: var(--golem-space-6);
+  border-radius: var(--golem-radius-xl);
+  height: fit-content;
+  position: sticky;
+  top: calc(var(--golem-navbar-height, 80px) + var(--golem-space-4));
+}
+
+.golem-main-content {
+  min-width: 0; /* Prevent overflow */
+}
+
+@media (max-width: 768px) {
+  .golem-page-layout {
+    grid-template-columns: 1fr;
+  }
+  
+  .golem-sidebar {
+    position: static;
+  }
+}
+
+/* Secondary Navigation */
+.golem-nav-secondary h3 {
+  font-size: var(--golem-text-body-medium);
+  font-weight: var(--golem-font-semibold);
+  margin-bottom: var(--golem-space-3);
+  color: var(--golem-color-text-primary);
+}
+
+.golem-nav-secondary ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.golem-nav-secondary li {
+  margin-bottom: var(--golem-space-1);
+}
+
+.golem-nav-secondary a {
+  display: block;
+  padding: var(--golem-space-2) var(--golem-space-3);
+  color: var(--golem-color-text-secondary);
+  text-decoration: none;
+  border-radius: var(--golem-radius-base);
+  font-size: var(--golem-text-body-small);
+  transition: all var(--golem-duration-base) var(--golem-easing-ease-out);
+}
+
+.golem-nav-secondary a:hover {
+  background-color: var(--golem-color-surface-base);
+  color: var(--golem-color-text-primary);
+}
+
+.golem-nav-secondary a[aria-current="page"] {
+  background-color: var(--golem-color-primary-100);
+  color: var(--golem-color-primary-700);
+  font-weight: var(--golem-font-medium);
+}
+
+/* ===================================================================
+   COMPONENT EXAMPLES
+   ================================================================ */
+
+/* Component Example Container */
+.golem-example {
+  border: 1px solid var(--golem-color-border-base);
+  border-radius: var(--golem-radius-lg);
+  overflow: hidden;
+  margin: var(--golem-space-6) 0;
+}
+
+.golem-example__preview {
+  padding: var(--golem-space-6);
+  background-color: var(--golem-color-surface-base);
+  border-bottom: 1px solid var(--golem-color-border-base);
+}
+
+.golem-example__code {
+  background-color: var(--golem-color-surface-raised);
+}
+
+.golem-example__code pre {
+  margin: 0;
+  padding: var(--golem-space-4);
+  background: none;
+  border: none;
+  border-radius: 0;
+  font-size: var(--golem-text-sm);
+  overflow-x: auto;
+}
+
+.golem-example__code code {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--golem-color-text-primary);
+}
+
+/* Component Playground */
+.golem-playground {
+  border: 1px solid var(--golem-color-border-base);
+  border-radius: var(--golem-radius-lg);
+  overflow: hidden;
+  margin: var(--golem-space-6) 0;
+}
+
+.golem-playground__controls {
+  background-color: var(--golem-color-surface-raised);
+  padding: var(--golem-space-4);
+  border-bottom: 1px solid var(--golem-color-border-base);
+  display: flex;
+  gap: var(--golem-space-4);
+  flex-wrap: wrap;
+}
+
+.golem-playground__controls label {
+  display: flex;
+  align-items: center;
+  gap: var(--golem-space-2);
+  font-size: var(--golem-text-body-small);
+  cursor: pointer;
+}
+
+.golem-playground__preview {
+  padding: var(--golem-space-6);
+  background-color: var(--golem-color-surface-base);
+  border-bottom: 1px solid var(--golem-color-border-base);
+  text-align: center;
+}
+
+.golem-playground__code {
+  background-color: var(--golem-color-surface-raised);
+  padding: var(--golem-space-4);
+}
+
+/* ===================================================================
+   CONTENT ENHANCEMENTS
+   ================================================================ */
+
+/* Table of Contents */
+.golem-toc {
+  background-color: var(--golem-color-surface-raised);
+  border: 1px solid var(--golem-color-border-base);
+  border-radius: var(--golem-radius-lg);
+  padding: var(--golem-space-4);
+  margin: var(--golem-space-6) 0;
+}
+
+.golem-toc h3 {
+  margin-bottom: var(--golem-space-3);
+  font-size: var(--golem-text-body-medium);
+}
+
+.golem-toc ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.golem-toc li {
+  margin-bottom: var(--golem-space-1);
+}
+
+.golem-toc a {
+  color: var(--golem-color-text-secondary);
+  text-decoration: none;
+  font-size: var(--golem-text-body-small);
+}
+
+.golem-toc a:hover {
+  color: var(--golem-color-primary-600);
+}
+
+/* Design Token Tables */
+.golem-token-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--golem-space-6) 0;
+  font-size: var(--golem-text-body-small);
+}
+
+.golem-token-table th,
+.golem-token-table td {
+  padding: var(--golem-space-3) var(--golem-space-4);
+  text-align: left;
+  border-bottom: 1px solid var(--golem-color-border-base);
+  vertical-align: middle;
+}
+
+.golem-token-table th {
+  background-color: var(--golem-color-surface-raised);
+  font-weight: var(--golem-font-semibold);
+}
+
+.golem-token-preview {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--golem-radius-base);
+  border: 1px solid var(--golem-color-border-base);
+  margin-right: var(--golem-space-2);
+}
+
+.golem-token-code {
+  font-family: var(--golem-font-mono);
+  background-color: var(--golem-color-surface-raised);
+  padding: var(--golem-space-1) var(--golem-space-2);
+  border-radius: var(--golem-radius-sm);
+  font-size: 0.85em;
+}
+
+/* AI Prompt Examples */
+.golem-prompt-example {
+  background-color: var(--golem-color-primary-50);
+  border: 1px solid var(--golem-color-primary-200);
+  border-radius: var(--golem-radius-lg);
+  padding: var(--golem-space-4);
+  margin: var(--golem-space-4) 0;
+  position: relative;
+}
+
+.golem-prompt-example::before {
+  content: "🤖 AI Prompt";
+  display: block;
+  font-size: var(--golem-text-xs);
+  font-weight: var(--golem-font-semibold);
+  color: var(--golem-color-primary-700);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--golem-space-2);
+}
+
+.golem-prompt-example code {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+}
+
+/* Do/Don't Examples */
+.golem-do-dont {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--golem-space-6);
+  margin: var(--golem-space-6) 0;
+}
+
+.golem-do,
+.golem-dont {
+  padding: var(--golem-space-4);
+  border-radius: var(--golem-radius-lg);
+  border: 2px solid;
+}
+
+.golem-do {
+  border-color: var(--golem-color-success-base);
+  background-color: var(--golem-color-success-light);
+}
+
+.golem-do::before {
+  content: "✅ Do";
+  display: block;
+  font-weight: var(--golem-font-semibold);
+  color: var(--golem-color-success-strong);
+  margin-bottom: var(--golem-space-2);
+}
+
+.golem-dont {
+  border-color: var(--golem-color-error-base);
+  background-color: var(--golem-color-error-light);
+}
+
+.golem-dont::before {
+  content: "❌ Don't";
+  display: block;
+  font-weight: var(--golem-font-semibold);
+  color: var(--golem-color-error-strong);
+  margin-bottom: var(--golem-space-2);
+}
+
+@media (max-width: 768px) {
+  .golem-do-dont {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===================================================================
+   UTILITY CLASSES
+   ================================================================ */
+
+/* Text utilities */
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* Column span utilities for grid */
+.golem-col-span-2 {
+  grid-column: span 2;
+}
+
+.golem-col-span-3 {
+  grid-column: span 3;
+}
+
+.golem-col-span-4 {
+  grid-column: span 4;
+}
+
+/* Responsive grid utilities */
+@media (min-width: 768px) {
+  .golem-grid-cols-md-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  
+  .golem-grid-cols-md-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .golem-grid-cols-lg-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  
+  .golem-grid-cols-lg-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  
+  .golem-grid-cols-lg-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+/* ===================================================================
+   ACCESSIBILITY ENHANCEMENTS
+   ================================================================ */
+
+/* Skip link for keyboard navigation */
+.golem-sr-only--focusable:focus {
+  position: absolute;
+  top: var(--golem-space-4);
+  left: var(--golem-space-4);
+  background-color: var(--golem-color-primary-500);
+  color: var(--golem-color-text-inverse);
+  padding: var(--golem-space-2) var(--golem-space-4);
+  border-radius: var(--golem-radius-base);
+  text-decoration: none;
+  font-weight: var(--golem-font-semibold);
+  z-index: 1000;
+  clip: auto;
+  width: auto;
+  height: auto;
+}
+
+/* High contrast mode improvements */
+@media (prefers-contrast: high) {
+  .golem-navbar {
+    border-bottom-width: 2px;
+  }
+  
+  .golem-example,
+  .golem-playground {
+    border-width: 2px;
+  }
+  
+  .golem-token-preview {
+    border-width: 2px;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .golem-navbar__link,
+  .golem-footer__link,
+  .golem-nav-secondary a {
+    transition: none;
+  }
+  
+  .golem-hero::before {
+    animation: none;
+  }
+}
